@@ -15,13 +15,13 @@
         <nav class="header__menu">
           <ul class="header__menu-list">
             <li class="header__menu-item">
-              <a href="#about" class="header__menu-link">about</a>
-            </li>
-            <li class="header__menu-item">
               <a href="#portfolio" class="header__menu-link">portfolio</a>
             </li>
             <li class="header__menu-item">
               <a href="#contacts" class="header__menu-link">contacts</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">resume</a>
             </li>
           </ul>
         </nav>
@@ -72,14 +72,14 @@
 
       <section class="contacts" id="contacts">
         <div class="container">
-          <h2 class="contacts__title">Контакты: </h2>
+          <h2 class="contacts__title">Contacts: </h2>
           <div class="contacts__wrapper">
-            <span class="contacts__key">Телефон: </span>
+            <span class="contacts__key">Tel: </span>
             <a href="tel:+79171173215" class="contacts__val">+7-917-117-32-15</a>
           </div>
           <div class="contacts__wrapper">
             <span class="contacts__key">Skype: </span>
-            <a class="contacts__val" href="skype:vladimir.tyalo?call">
+            <a class="contacts__val" href="skype:vladimir.tyalo?copy">
               <svg class="contacts__icon" width="50" height="50">
                 <use x="0" y="0" xlink:href="#icon-skype"></use>
               </svg>
@@ -91,7 +91,7 @@
           </div>
           <div class="contacts__wrapper">
             <span class="contacts__key">LinkedIn: </span>
-            <a class="contacts__val" href="http://www.linkedin.com/in/vladimir-tyalo-6b9a0788">
+            <a class="contacts__val" href="http://www.linkedin.com/in/vladimir-tyalo-6b9a0788" target="_blank">
               <svg class="contacts__icon" width="50" height="50">
                 <use x="0" y="0" xlink:href="#icon-linkedin"></use>
               </svg>
@@ -99,12 +99,47 @@
           </div>
           <div class="contacts__wrapper">
             <span class="contacts__key">GitHub: </span>
-            <a class="contacts__val" href="https://github.com/VladimirTyalo">
+            <a class="contacts__val" href="https://github.com/VladimirTyalo" target="_blank">
               <svg class="contacts__icon" width="50" height="50">
                 <use x="0" y="0" xlink:href="#icon-git"></use>
               </svg>
             </a>
           </div>
+        </div>
+      </section>
+
+
+      <section class="favorite">
+        <div class="container">
+          <h2 class="favorite__title">Favorite free resources: </h2>
+          <ul class="favorite__list">
+            <li class="favorite__item">
+              <a class="favorite__link" href="https://github.com/getify/You-Dont-Know-JS/#readme" target="_blank">
+                <img class="favorite__img" src="img/ydkjs.jpg" width="150" height="225" alt="you don't know javascript by Kyle Simpson">
+              </a>
+              <p class="favorite__descr">Серия из 6 небольших книг в которых автор
+                <a href="">Kile Simpson</a>
+                рассказывает простым языком о сложных аспектах javaScript развевает некоторые мифы и заблужления.
+              </p>
+            </li>
+
+            <li class="favorite__item">
+              <a class="favorite__link" href="http://algs4.cs.princeton.edu/home/" target="_blank">
+                <img class="favorite__img" src="img/algorithms.jpg" width="150" height="225" alt="Algorithms by Robert Sadgewick | Prinston University">
+              </a>
+              <p class="favorite__descr">Ресурс одного из создателей алгоритма Red-Black tree - Robert Sadgewick. Практически полностью повторяет его книгу
+                <a href="https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/ref=sr_1_4?ie=UTF8&qid=1469353561&sr=8-4&keywords=Algorithms" target="_blank">Algorithms</a>
+                .
+              </p>
+            </li>
+
+            <li class="favorite__item">
+              <a class="favorite__link" href="http://gameprogrammingpatterns.com/" target="_blank">
+                <img class="favorite__img" src="img/gamePatterns.jpg" width="150" height="225" alt="Design patterns for game development">
+              </a>
+              <p class="favorite__descr">Книга от разработчика компании Electronic Arts. Одна из самых увлекательных книг по паттернам проектирования. Будет полезна не только разработчикам игр, но и всем кто хочет лучше понять паттерны.</p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -122,6 +157,9 @@
             </li>
             <li class="footer__menu-item">
               <a href="#contacts" class="header__menu-link">contacts</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">resume</a>
             </li>
           </ul>
         </nav>
