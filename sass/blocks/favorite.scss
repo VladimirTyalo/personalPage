@@ -4,7 +4,6 @@
     text-align: center;
     min-height: 225px;
     padding-top: 20px;
-
     @include graph-paper(20px);
   }
 
@@ -12,9 +11,15 @@
     list-style: none;
   }
 
-
   &__img {
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.7);
+    &:hover {
+      box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.7);
+    }
+    &:active {
+      box-shadow:  0 5px 10px 0 rgba(0, 0, 0, 0.7);
+      transform: translateY(5px);
+    }
   }
 
   &__descr {

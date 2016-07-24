@@ -21,6 +21,16 @@
     padding: 16px;
     display: block;
     text-align: center;
+    transition: all 0.3s;
+
+    &:hover {
+      background: rgba(3, 19, 30, 0.7);
+    }
+
+    &:active {
+      background: whitesmoke;
+      color: black;
+    }
   }
 }
 

@@ -23,6 +23,15 @@
     color: white;
     padding: 16px;
     display: block;
+
+    &:hover {
+      background: rgba(3, 19, 30, 0.7);
+    }
+
+    &:active {
+      background: whitesmoke;
+      color: black;
+    }
   }
 }
 
