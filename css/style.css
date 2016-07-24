@@ -444,7 +444,12 @@ img {
   text-decoration: none;
   border: 2px solid white;
   border-radius: 10px;
-  color: white; }
+  color: white;
+  transition: all 0.3s; }
+  .btn:hover {
+    background: #4fa664; }
+  .btn:active {
+    opacity: 0.5; }
 
 .contacts {
   margin-bottom: 20px; }
@@ -477,12 +482,20 @@ img {
     padding-bottom: 20px;
     padding-left: 10px;
     position: relative; }
+    .contacts__val:hover {
+      color: #33a0ce; }
+    .contacts__val:active {
+      color: firebrick; }
   .contacts__icon {
     position: absolute;
     top: 10px;
     right: 0;
     width: 50px;
     height: 50px; }
+    .contacts__icon:hover {
+      opacity: 0.7; }
+    .contacts__icon:active {
+      opacity: 0.3; }
 
 .favorite__item {
   text-align: center;
@@ -496,7 +509,12 @@ img {
   list-style: none; }
 
 .favorite__img {
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.7); }
+  .favorite__img:hover {
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.7); }
+  .favorite__img:active {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.7);
+    transform: translateY(5px); }
 
 .favorite__descr {
   text-align: justify; }
@@ -519,6 +537,11 @@ img {
     color: white;
     padding: 16px;
     display: block; }
+    .footer__menu-link:hover {
+      background: rgba(3, 19, 30, 0.7); }
+    .footer__menu-link:active {
+      background: whitesmoke;
+      color: black; }
 
 .header {
   background: #4fa664; }
@@ -537,7 +560,13 @@ img {
     color: white;
     padding: 16px;
     display: block;
-    text-align: center; }
+    text-align: center;
+    transition: all 0.3s; }
+    .header__menu-link:hover {
+      background: rgba(3, 19, 30, 0.7); }
+    .header__menu-link:active {
+      background: whitesmoke;
+      color: black; }
 
 .portfolio {
   background: linear-gradient(#bbb, transparent 1px), linear-gradient(90deg, #bbb, transparent 1px);
