@@ -1,0 +1,67 @@
+.contacts {
+  margin-bottom: 20px;
+
+  &__title {
+    width: 100%;
+    @include font(24px, 30px);
+  }
+
+  &__wrapper {
+    width: 100%;
+    flex: 1 0 100%;
+    border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+  &__key {
+    @include font(18px, 24px);
+    @include block-align(inline-block, baseline);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__val {
+    cursor: pointer;
+    @include block-align(inline-block, baseline);
+    float: right;
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 500px) {
+  .contacts {
+
+    .container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+
+    &__title {
+      width: 100%;
+    }
+    &__wrapper {
+      flex: 0 0 45%;
+
+      &:nth-child(2n - 1) {
+        margin-right: 3%;
+      }
+    }
+  }
+}

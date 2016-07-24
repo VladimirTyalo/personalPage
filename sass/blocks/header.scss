@@ -1,0 +1,29 @@
+.header {
+  background: #0cad41;
+
+
+  .container {
+    justify-content: flex-end;
+  }
+
+  &__menu {
+    flex: 1 0;
+  }
+
+  &__menu-list {
+    list-style: none;
+    text-align: right;
+  }
+
+  &__menu-item {
+    @include block-align();
+
+  }
+
+  &__menu-link {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    display: block;
+  }
+}
