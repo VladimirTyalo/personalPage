@@ -1,6 +1,5 @@
 .footer {
-  background: #0cad41;
-
+  background: #4fa664;
 
   .container {
     justify-content: flex-end;
@@ -16,8 +15,7 @@
   }
 
   &__menu-item {
-    @include block-align();
-
+    display: block;
   }
 
   &__menu-link {
@@ -25,5 +23,14 @@
     color: white;
     padding: 16px;
     display: block;
+  }
+}
+
+
+@media (min-width: 410px) {
+  .footer {
+    &__menu-item {
+      @include block-align();
+    }
   }
 }

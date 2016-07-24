@@ -1,10 +1,5 @@
 .header {
-  background: #0cad41;
-
-
-  .container {
-    justify-content: flex-end;
-  }
+  background: #4fa664;
 
   &__menu {
     flex: 1 0;
@@ -16,14 +11,23 @@
   }
 
   &__menu-item {
-    @include block-align();
-
+    display: block;
   }
 
   &__menu-link {
+    @include font(20px, 26px);
     text-decoration: none;
     color: white;
     padding: 16px;
     display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 370px) {
+  .header {
+    &__menu-item {
+      @include block-align();
+    }
   }
 }

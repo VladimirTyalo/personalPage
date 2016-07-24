@@ -1,5 +1,5 @@
 .portfolio {
-  background: #0cad41;
+  @include graph-paper(20px);
   padding-top: 20px;
 
   .container {
@@ -25,6 +25,7 @@
     margin-bottom: 50px;
     transition: filter 1s;
     overflow: hidden;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
 
@@ -38,7 +39,7 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-    background: rgba(20, 75, 52, 0.7);
+    background: rgba(3, 19, 30, 0.7);
     top: -500px;
     left: 0;
     width: 100%;

@@ -16,6 +16,7 @@
     height: 200px;
     align-self: stretch;
     margin-bottom: 20px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
   }
 
   &__story {
@@ -31,7 +32,7 @@
   .about {
 
     .container {
-      justify-content: left;
+      justify-content: space-between;
     }
 
     &__title {
@@ -39,7 +40,6 @@
     }
     &__img {
       margin-right: 30px;
-
     }
 
     &__story {

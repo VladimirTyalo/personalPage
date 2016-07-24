@@ -11,8 +11,13 @@ body {
   font-family: Neucha, Arial, serif;
 }
 
-h1, h2, a {
+h1, h2 {
   font-family: Bitter, Arail, serif;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 ul {

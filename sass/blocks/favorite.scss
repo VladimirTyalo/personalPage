@@ -1,0 +1,46 @@
+.favorite {
+
+  &__item {
+    text-align: center;
+    min-height: 225px;
+    padding-top: 20px;
+
+    @include graph-paper(20px);
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+
+  &__img {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  &__descr {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 500px) {
+  .favorite {
+
+    &__item {
+      display: flex;
+      flex-flow: row nowrap;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    &__link {
+      width: 30%;
+      margin-right: 30px;
+      text-align: left;
+    }
+
+    &__descr {
+      width: 60%;
+      @include font(20px, 20px);
+    }
+  }
+}
