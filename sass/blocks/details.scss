@@ -1,0 +1,21 @@
+.details {
+  width: 40%;
+  flex: 1 1 40%;
+
+  &__list {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__key {
+    padding-right: 50px;
+    border-bottom: 1px solid grey;
+  }
+
+
+
+  &__val {
+    padding-left: 50px;
+    border-bottom: 1px solid grey;
+  }
+}

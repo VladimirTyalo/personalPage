@@ -29,6 +29,11 @@
   });
 
 
+  app.get("/favicon.ico", function(req, res) {
+    res.send("img/favicon.ico");
+  });
+
+
   app.use(function (req, res) {
     res.sendStatus(404);
   });

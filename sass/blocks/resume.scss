@@ -1,0 +1,33 @@
+.resume {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 30px;
+  }
+
+  h1 {
+    @include font(20px, 24px);
+    font-family: Neucha, Arial, serif;
+    color: #555524;
+    border-bottom: 2px solid #3d7b49;
+    padding-left: 50px;
+  }
+
+  td {
+    font-family: Bitter, Arail, serif;
+    font-weight: normal;
+    @include font(16px, 30px);
+  }
+
+  &__photo-wrapper {
+    width: 40%;
+    padding: 40px;
+    padding-left: 0;
+  }
+
+  &__photo {
+    height: auto;
+    filter: grayscale(1);
+    float: left;
+  }
+}

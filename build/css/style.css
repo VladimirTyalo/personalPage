@@ -497,6 +497,26 @@ img {
     .contacts__icon:active {
       opacity: 0.3; }
 
+.details {
+  width: 40%;
+  -ms-flex: 1 1 40%;
+      flex: 1 1 40%; }
+  .details__list {
+    width: 100%;
+    border-collapse: collapse; }
+  .details__key {
+    padding-right: 50px;
+    border-bottom: 1px solid grey; }
+  .details__val {
+    padding-left: 50px;
+    border-bottom: 1px solid grey; }
+
+.education {
+  width: 100%; }
+
+.experience {
+  width: 100%; }
+
 .favorite__item {
   text-align: center;
   min-height: 225px;
@@ -636,15 +656,59 @@ img {
     font-size: 1rem;
     line-height: 1.25rem;
     padding: 10px; }
-  @media (min-width: 370px) {
+
+.profile {
+  -ms-flex: 1 1 40%;
+      flex: 1 1 40%; }
+
+.resume .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  padding-top: 30px; }
+
+.resume h1 {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-family: Neucha, Arial, serif;
+  color: #555524;
+  border-bottom: 2px solid #3d7b49;
+  padding-left: 50px; }
+
+.resume td {
+  font-family: Bitter, Arail, serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.875rem; }
+
+.resume__photo-wrapper {
+  width: 40%;
+  padding: 40px;
+  padding-left: 0; }
+
+.resume__photo {
+  height: auto;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  float: left; }
+
+.skills {
+  -ms-flex: 1 1 40%;
+      flex: 1 1 40%;
+  margin-right: 30px; }
+
+@media (min-width: 370px) {
   .header__menu-item {
     display: inline-block;
     vertical-align: top; } }
-  @media (min-width: 410px) {
+
+@media (min-width: 410px) {
   .footer__menu-item {
     display: inline-block;
     vertical-align: top; } }
-  @media (min-width: 500px) {
+
+@media (min-width: 500px) {
   .contacts .container {
     display: -ms-flexbox;
     display: flex;
@@ -674,11 +738,13 @@ img {
     width: 60%;
     font-size: 1.25rem;
     line-height: 1.25rem; } }
-  @media screen and (min-width: 500px) {
+
+@media screen and (min-width: 500px) {
   .portfolio__sample-description {
     font-size: 1.25rem;
     line-height: 1.625rem; } }
-  @media (min-width: 540px) {
+
+@media (min-width: 540px) {
   .about .container {
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -688,7 +754,8 @@ img {
     margin-right: 30px; }
   .about__story {
     width: 100%; } }
-  @media (min-width: 700px) {
+
+@media (min-width: 700px) {
   .about__story {
     width: 40%; }
   .portfolio__list {
