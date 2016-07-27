@@ -2,6 +2,15 @@
   width: 40%;
   flex: 1 1 40%;
 
+
+
+  h1 {
+    background-image: url("../img/icons/icon-info.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 10px 0px;
+  }
+
   &__list {
     width: 100%;
     border-collapse: collapse;
@@ -17,5 +26,36 @@
   &__val {
     padding-left: 50px;
     border-bottom: 1px solid grey;
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+    background-size: 15px 15px;
+
+    &--name {
+      background-image: url("../img/icons/man-user.svg");
+    }
+
+    &--dob {
+      background-image: url("../img/icons/icon-calendar.svg");
+    }
+    &--home {
+      background-image: url("../img/icons/icon-home.svg");
+    }
+    &--web {
+      background-image: url("../img/icons/icon-web.svg");
+    }
+    &--phone {
+      background-image: url("../img/icons/icon-phone.svg");
+    }
+    &--skype {
+      background-image: url("../img/icons/icon-skype.svg");
+    }
+
+    &--mail {
+      background-image: url("../img/icons/icon-mail.svg");
+    }
+
+    &--github {
+      background-image: url("../img/icons/icon-github.svg");
+    }
   }
 }

@@ -1,0 +1,44 @@
+.employment {
+  width: 100%;
+
+
+  table {
+    border-collapse: collapse;
+  }
+
+  h1 {
+    background-image: url("../img/icons/briefcase.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px -3px;
+  }
+
+  &__time {
+    @include font(16px, 20px);
+    font-weight: normal;
+  }
+
+  &__column-one {
+    width: 40%;
+  }
+
+  &__column-two {
+    width: 60%;
+  }
+
+  td {
+    @include font(16px, 20px);
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  tr:last-child  td {
+    border-bottom: none;
+  }
+  tr td:first-child {
+    vertical-align: top;
+  }
+
+}

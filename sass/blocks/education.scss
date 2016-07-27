@@ -1,3 +1,46 @@
 .education {
   width: 100%;
+
+  h1 {
+    background-image: url("../img/icons/university.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 33px;
+    background-position: 10px -3px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  &__item--universities  td,
+  &__item--universities th {
+    border-top: 1px solid grey;
+    padding-top: 20px;
+  }
+
+
+  &__item--courses td{
+    padding-bottom: 20px;
+  }
+
+
+  &__column-one {
+    width: 20%;
+  }
+
+  &__column-two {
+    width: 20%;
+  }
+
+  &__column-three {
+    width: 60%;
+  }
+
+
 }

@@ -1,0 +1,18 @@
+.coding {
+  width: 100%;
+
+  h1 {
+    background-image: url("../img/icons/icon-code.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px -3px;
+  }
+
+
+  &__list {
+    margin-left: 50px;
+  }
+  &__sample {
+    @include font(18px, 26px);
+  }
+}
