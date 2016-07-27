@@ -379,8 +379,10 @@ h1, h2 {
   font-family: Bitter, Arail, serif; }
 
 a {
+  cursor: pointer;
   text-decoration: none;
-  white-space: nowrap; }
+  white-space: nowrap;
+  color: black; }
 
 ul {
   margin: 0;
@@ -451,6 +453,19 @@ img {
   .btn:active {
     opacity: 0.5; }
 
+.coding {
+  width: 100%; }
+  .coding h1 {
+    background-image: url("../img/icons/icon-code.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px -3px; }
+  .coding__list {
+    margin-left: 50px; }
+  .coding__sample {
+    font-size: 1.125rem;
+    line-height: 1.625rem; }
+
 .contacts {
   margin-bottom: 20px; }
   .contacts__title {
@@ -501,6 +516,11 @@ img {
   width: 40%;
   -ms-flex: 1 1 40%;
       flex: 1 1 40%; }
+  .details h1 {
+    background-image: url("../img/icons/icon-info.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 10px 0px; }
   .details__list {
     width: 100%;
     border-collapse: collapse; }
@@ -509,13 +529,81 @@ img {
     border-bottom: 1px solid grey; }
   .details__val {
     padding-left: 50px;
-    border-bottom: 1px solid grey; }
+    border-bottom: 1px solid grey;
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+    background-size: 15px 15px; }
+    .details__val--name {
+      background-image: url("../img/icons/man-user.svg"); }
+    .details__val--dob {
+      background-image: url("../img/icons/icon-calendar.svg"); }
+    .details__val--home {
+      background-image: url("../img/icons/icon-home.svg"); }
+    .details__val--web {
+      background-image: url("../img/icons/icon-web.svg"); }
+    .details__val--phone {
+      background-image: url("../img/icons/icon-phone.svg"); }
+    .details__val--skype {
+      background-image: url("../img/icons/icon-skype.svg"); }
+    .details__val--mail {
+      background-image: url("../img/icons/icon-mail.svg"); }
+    .details__val--github {
+      background-image: url("../img/icons/icon-github.svg"); }
 
 .education {
   width: 100%; }
+  .education h1 {
+    background-image: url("../img/icons/university.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 33px;
+    background-position: 10px -3px; }
+  .education table {
+    width: 100%;
+    border-collapse: collapse; }
+  .education th {
+    text-align: left;
+    padding-left: 50px; }
+  .education__item--universities td,
+  .education__item--universities th {
+    border-top: 1px solid grey;
+    padding-top: 20px; }
+  .education__item--courses td {
+    padding-bottom: 20px; }
+  .education__column-one {
+    width: 20%; }
+  .education__column-two {
+    width: 20%; }
+  .education__column-three {
+    width: 60%; }
 
-.experience {
+.employment {
   width: 100%; }
+  .employment table {
+    border-collapse: collapse; }
+  .employment h1 {
+    background-image: url("../img/icons/briefcase.svg");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: 10px -3px; }
+  .employment__time {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: normal; }
+  .employment__column-one {
+    width: 40%; }
+  .employment__column-two {
+    width: 60%; }
+  .employment td {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-weight: normal;
+    border-bottom: 1px solid grey;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .employment tr:last-child td {
+    border-bottom: none; }
+  .employment tr td:first-child {
+    vertical-align: top; }
 
 .favorite__item {
   text-align: center;
@@ -657,58 +745,63 @@ img {
     line-height: 1.25rem;
     padding: 10px; }
 
-.profile {
-  -ms-flex: 1 1 40%;
-      flex: 1 1 40%; }
-
-.resume .container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  padding-top: 30px; }
-
-.resume h1 {
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  font-family: Neucha, Arial, serif;
-  color: #555524;
-  border-bottom: 2px solid #3d7b49;
-  padding-left: 50px; }
-
-.resume td {
-  font-family: Bitter, Arail, serif;
-  font-weight: normal;
-  font-size: 1rem;
-  line-height: 1.875rem; }
-
-.resume__photo-wrapper {
-  width: 40%;
-  padding: 40px;
-  padding-left: 0; }
-
-.resume__photo {
-  height: auto;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  float: left; }
+.resume {
+  width: 100%; }
+  .resume .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    padding-top: 30px;
+    margin-bottom: 30px; }
+  .resume h1 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: Neucha, Arial, serif;
+    color: #3d7b49;
+    border-bottom: 2px solid #3d7b49;
+    padding-left: 50px; }
+  .resume td {
+    font-family: Bitter, Arail, serif;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.875rem; }
+  .resume__photo-wrapper {
+    width: 40%;
+    padding: 40px;
+    padding-left: 0; }
+  .resume__photo {
+    height: auto;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+    float: left; }
 
 .skills {
-  -ms-flex: 1 1 40%;
-      flex: 1 1 40%;
-  margin-right: 30px; }
-
-@media (min-width: 370px) {
+  width: 100%; }
+  .skills h1 {
+    background-image: url("../img/icons/icon-skills.svg");
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 10px 0px; }
+  .skills__list {
+    list-style: none;
+    margin-left: 50px; }
+  .skills span {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #3d7b49;
+    display: inline-block; }
+  @media (min-width: 370px) {
   .header__menu-item {
     display: inline-block;
     vertical-align: top; } }
-
-@media (min-width: 410px) {
+  @media (min-width: 410px) {
   .footer__menu-item {
     display: inline-block;
     vertical-align: top; } }
-
-@media (min-width: 500px) {
+  @media (min-width: 500px) {
   .contacts .container {
     display: -ms-flexbox;
     display: flex;
@@ -738,13 +831,11 @@ img {
     width: 60%;
     font-size: 1.25rem;
     line-height: 1.25rem; } }
-
-@media screen and (min-width: 500px) {
+  @media screen and (min-width: 500px) {
   .portfolio__sample-description {
     font-size: 1.25rem;
     line-height: 1.625rem; } }
-
-@media (min-width: 540px) {
+  @media (min-width: 540px) {
   .about .container {
     -ms-flex-pack: justify;
     justify-content: space-between; }
@@ -754,8 +845,7 @@ img {
     margin-right: 30px; }
   .about__story {
     width: 100%; } }
-
-@media (min-width: 700px) {
+  @media (min-width: 700px) {
   .about__story {
     width: 40%; }
   .portfolio__list {
