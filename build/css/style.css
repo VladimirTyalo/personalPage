@@ -569,6 +569,8 @@ img {
     padding-top: 20px; }
   .education__item--courses td {
     padding-bottom: 20px; }
+  .education__date {
+    vertical-align: top; }
   .education__column-one {
     width: 20%; }
   .education__column-two {
@@ -599,7 +601,8 @@ img {
     font-weight: normal;
     border-bottom: 1px solid grey;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    padding-left: 50px; }
   .employment tr:last-child td {
     border-bottom: none; }
   .employment tr td:first-child {
@@ -656,8 +659,9 @@ img {
 .header {
   background: #4fa664; }
   .header__menu {
-    -ms-flex: 1 0;
-        flex: 1 0; }
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+    box-sizing: content-box; }
   .header__menu-list {
     list-style: none;
     text-align: right; }
@@ -746,7 +750,7 @@ img {
     padding: 10px; }
 
 .resume {
-  width: 100%; }
+  width: auto; }
   .resume .container {
     display: -ms-flexbox;
     display: flex;
@@ -774,7 +778,9 @@ img {
     height: auto;
     -webkit-filter: grayscale(1);
             filter: grayscale(1);
-    float: left; }
+    float: left;
+    width: 300px;
+    height: auto; }
 
 .skills {
   width: 100%; }
@@ -787,18 +793,17 @@ img {
     list-style: none;
     margin-left: 50px; }
   .skills span {
-    font-size: 1.25rem;
-    line-height: 1.875rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     padding: 10px;
     margin: 5px;
     border: 2px solid #3d7b49;
     display: inline-block; }
-  @media (min-width: 370px) {
-  .header__menu-item {
-    display: inline-block;
-    vertical-align: top; } }
   @media (min-width: 410px) {
   .footer__menu-item {
+    display: inline-block;
+    vertical-align: top; }
+  .header__menu-item {
     display: inline-block;
     vertical-align: top; } }
   @media (min-width: 500px) {
@@ -856,3 +861,29 @@ img {
   .portfolio__sample-description {
     font-size: 1rem;
     line-height: 1.25rem; } }
+  @media (max-width: 560px) {
+  .details {
+    width: auto; }
+  .details__key {
+    padding-right: 10px; } }
+  @media (max-width: 560px) and (max-width: 430px) {
+  .details__val {
+    background: none;
+    padding-left: 5px;
+    font-size: 0.875rem;
+    line-height: 1.125rem; }
+  .details__key {
+    font-size: 0.875rem;
+    line-height: 1.125rem; } }
+  @media (max-width: 790px) {
+  .education th {
+    display: none; }
+  .education td {
+    border-bottom: 1px solid grey; }
+  .education__column-two {
+    width: 20%; }
+  .education__column-three {
+    width: 80%; } }
+  @media (max-width: 810px) {
+  .resume__photo-wrapper {
+    display: none; } }

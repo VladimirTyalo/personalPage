@@ -2,7 +2,8 @@
   background: #4fa664;
 
   &__menu {
-    flex: 1 0;
+    flex: 1 0 100%;
+    box-sizing: content-box;
   }
 
   &__menu-list {
@@ -34,7 +35,7 @@
   }
 }
 
-@media (min-width: 370px) {
+@media (min-width: 410px) {
   .header {
     &__menu-item {
       @include block-align();
