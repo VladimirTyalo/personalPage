@@ -522,7 +522,7 @@ img {
     background-size: 25px 25px;
     background-position: 10px 0px; }
   .details__list {
-    width: 100%;
+    width: auto;
     border-collapse: collapse; }
   .details__key {
     padding-right: 50px;
@@ -580,6 +580,13 @@ img {
 
 .employment {
   width: 100%; }
+  .employment__mobile {
+    display: block;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding-left: 10px; }
+  .employment__tablet {
+    display: none; }
   .employment table {
     border-collapse: collapse; }
   .employment h1 {
@@ -602,7 +609,7 @@ img {
     border-bottom: 1px solid grey;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50px; }
+    padding-left: 10px; }
   .employment tr:last-child td {
     border-bottom: none; }
   .employment tr td:first-child {
@@ -757,7 +764,8 @@ img {
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     padding-top: 30px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    overflow: hidden; }
   .resume h1 {
     font-size: 1.25rem;
     line-height: 1.875rem;
@@ -791,7 +799,7 @@ img {
     background-position: 10px 0px; }
   .skills__list {
     list-style: none;
-    margin-left: 50px; }
+    margin-left: 10px; }
   .skills span {
     font-size: 1.125rem;
     line-height: 1.625rem;
@@ -821,6 +829,12 @@ img {
     flex: 0 0 45%; }
   .contacts__wrapper:nth-child(2n) {
     margin-right: 3%; }
+  .employment__mobile {
+    display: none; }
+  .employment__tablet {
+    display: table-cell; }
+  .employment td {
+    padding-left: 50px; }
   .favorite__item {
     display: -ms-flexbox;
     display: flex;
@@ -850,6 +864,9 @@ img {
     margin-right: 30px; }
   .about__story {
     width: 100%; } }
+  @media (min-width: 550px) {
+  .skills__list {
+    margin-left: 50px; } }
   @media (min-width: 700px) {
   .about__story {
     width: 40%; }

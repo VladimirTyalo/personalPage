@@ -13,9 +13,8 @@
 
   &__list {
     list-style: none;
-    margin-left: 50px;
+    margin-left: 10px;
   }
-
 
   span {
     @include font(18px, 26px);
@@ -23,5 +22,14 @@
     margin: 5px;
     border: 2px solid #3d7b49;
     display: inline-block;
+  }
+}
+
+@media (min-width: 550px) {
+  .skills {
+
+    &__list {
+      margin-left: 50px;
+    }
   }
 }
