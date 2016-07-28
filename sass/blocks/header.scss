@@ -2,10 +2,23 @@
   background: #4fa664;
 
   &__menu {
-    flex: 1 0 100%;
+    flex: 1 0 80%;
     box-sizing: content-box;
   }
 
+  &__lang {
+    flex: 1 0 100%;
+  }
+
+  &__lang-link {
+    color: white;
+    @include font(16px, 20px);
+    font-family: Bitter, Arail, serif;
+    display: inline-block;
+    padding: 20px 10px 20px 10px;
+  }
+
+  &
   &__menu-list {
     list-style: none;
     text-align: right;
@@ -35,10 +48,28 @@
   }
 }
 
-@media (min-width: 410px) {
+@media (min-width: 455px) {
   .header {
+    &__menu {
+     text-align: center;
+    }
     &__menu-item {
       @include block-align();
     }
+  }
+}
+
+@media (min-width: 565px) {
+  .header {
+
+    &__menu {
+      flex: 1 0 80%;
+      box-sizing: content-box;
+    }
+
+    &__lang {
+      flex: 1 0 20%;
+    }
+
   }
 }
