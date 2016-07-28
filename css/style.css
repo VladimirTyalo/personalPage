@@ -454,7 +454,8 @@ img {
     opacity: 0.5; }
 
 .coding {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   .coding h1 {
     background-image: url("../img/icons/icon-code.svg");
     background-repeat: no-repeat;
@@ -551,7 +552,8 @@ img {
       background-image: url("../img/icons/icon-github.svg"); }
 
 .education {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
   .education h1 {
     background-image: url("../img/icons/university.svg");
     background-repeat: no-repeat;
@@ -666,10 +668,20 @@ img {
 .header {
   background: #4fa664; }
   .header__menu {
-    -ms-flex: 1 0 100%;
-        flex: 1 0 100%;
+    -ms-flex: 1 0 80%;
+        flex: 1 0 80%;
     box-sizing: content-box; }
-  .header__menu-list {
+  .header__lang {
+    -ms-flex: 1 0 100%;
+        flex: 1 0 100%; }
+  .header__lang-link {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: Bitter, Arail, serif;
+    display: inline-block;
+    padding: 20px 10px 20px 10px; }
+  .header .header__menu-list {
     list-style: none;
     text-align: right; }
   .header__menu-item {
@@ -791,7 +803,8 @@ img {
     height: auto; }
 
 .skills {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10px; }
   .skills h1 {
     background-image: url("../img/icons/icon-skills.svg");
     background-repeat: no-repeat;
@@ -810,7 +823,10 @@ img {
   @media (min-width: 410px) {
   .footer__menu-item {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top; } }
+  @media (min-width: 455px) {
+  .header__menu {
+    text-align: center; }
   .header__menu-item {
     display: inline-block;
     vertical-align: top; } }
@@ -867,6 +883,14 @@ img {
   @media (min-width: 550px) {
   .skills__list {
     margin-left: 50px; } }
+  @media (min-width: 565px) {
+  .header__menu {
+    -ms-flex: 1 0 80%;
+    flex: 1 0 80%;
+    box-sizing: content-box; }
+  .header__lang {
+    -ms-flex: 1 0 20%;
+    flex: 1 0 20%; } }
   @media (min-width: 700px) {
   .about__story {
     width: 40%; }
@@ -878,20 +902,6 @@ img {
   .portfolio__sample-description {
     font-size: 1rem;
     line-height: 1.25rem; } }
-  @media (max-width: 560px) {
-  .details {
-    width: auto; }
-  .details__key {
-    padding-right: 10px; } }
-  @media (max-width: 560px) and (max-width: 430px) {
-  .details__val {
-    background: none;
-    padding-left: 5px;
-    font-size: 0.875rem;
-    line-height: 1.125rem; }
-  .details__key {
-    font-size: 0.875rem;
-    line-height: 1.125rem; } }
   @media (max-width: 790px) {
   .education th {
     display: none; }
@@ -901,6 +911,20 @@ img {
     width: 20%; }
   .education__column-three {
     width: 80%; } }
+  @media (max-width: 560px) and (max-width: 430px) {
+  .details__val {
+    background: none;
+    padding-left: 5px;
+    font-size: 0.875rem;
+    line-height: 1.125rem; }
+  .details__key {
+    font-size: 0.875rem;
+    line-height: 1.125rem; } }
+  @media (max-width: 560px) {
+  .details {
+    width: auto; }
+  .details__key {
+    padding-right: 10px; } }
   @media (max-width: 810px) {
   .resume__photo-wrapper {
     display: none; } }
