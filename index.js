@@ -15,8 +15,6 @@
   app.set('view engine', 'html');
   app.set("views", path.join(__dirname,"/build"));
 
-
-
   app.get("/", function (req, res) {
     res.render("index");
   });
