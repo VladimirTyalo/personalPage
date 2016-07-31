@@ -600,6 +600,9 @@ img {
     text-align: center;
     width: 20%; }
 
+.resume-ru .education td {
+  font-family: 'Open Sans', sans-serif; }
+
 .employment {
   width: 100%; }
   .employment__mobile {
@@ -961,8 +964,8 @@ img {
     line-height: 1.3rem;
     min-width: 150px; }
   .education__universities .education__descr {
-    font-size: 1.125rem;
-    line-height: 1.4625rem; }
+    font-size: 1.25rem;
+    line-height: 1.625rem; }
   .education__universities .education__date {
     font-size: 1rem;
     line-height: 1.3rem;

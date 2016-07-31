@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="css/style.min.css">
     <title>Владимир Тяло | Резюме</title>
   </head>
-  <body>
+  <body class="resume-ru">
 
     <header class="header">
       <div class="container">
         <div class="header__lang">
-          <a class="header__lang-link"  >rus</a>
-          <a  class="header__lang-link" href="resume.html">eng</a>
+          <a class="header__lang-link">rus</a>
+          <a class="header__lang-link" href="resume.html">eng</a>
         </div>
         <nav class="header__menu">
           <div class="header__menu-icon header__menu-icon--close"></div>
@@ -45,47 +46,47 @@
           <img class="resume__photo" src="img/my_photo.jpg" alt="Tyalo Vladimir Ivanovich" width="200" height="150">
         </div>
         <section class="details">
-          <h1>Персональные данные</h1>
+          <h2>Персональные данные</h2>
           <table class="details__list">
             <tr class="details__item">
               <td class="details__key">ФИО:</td>
               <td class="details__val details__val--name">Тяло Владимир Иванович</td>
             </tr>
             <tr class="details__item">
-              <td class="details__key">Дата рождения</td>
+              <td class="details__key">Дата рождения:</td>
               <td class="details__val details__val--dob">6 октября 1980</td>
             </tr>
             <tr class="details__item">
-              <td class="details__key">Место жительства</td>
+              <td class="details__key">Место жительства:</td>
               <td class="details__val details__val--home">Россия, Самара</td>
             </tr>
             <tr class="details__item">
-              <td class="details__key">Web:</td>
+              <td class="details__key">Сайт:</td>
               <td class="details__val details__val--web">
                 <a class="details__val-link" href="https://tyalovladimir.herokuapp.com" target="_blank">tyalovladimir.herokapp.com</a>
               </td>
             </tr>
             <tr class="details__item">
-              <td class="details__key">Телефон: </td>
+              <td class="details__key">Телефон:</td>
               <td class="details__val details__val--phone">
                 <a href="tel:+79171173215">+7 (917) 117-32-15</a>
               </td>
             </tr>
             <tr class="details__item">
-              <td class="details__key ">skype</td>
+              <td class="details__key ">Скайп:</td>
               <td class="details__val details__val--skype">
                 <a href="skype:vladimir.tyalo">vladimir.tyalo</a>
               </td>
             </tr>
             <tr class="details__item">
-              <td class="details__key">Почта: </td>
+              <td class="details__key">Почта:</td>
               <td class="details__val details__val--mail">
                 <a href="mailto:bobtial@inbox.ru" target="_top">bobtial@inbox.ru</a>
               </td>
             </tr>
 
             <tr class="details__item">
-              <td class="details__key">github</td>
+              <td class="details__key">Гитхаб:</td>
               <td class="details__val details__val--github">
                 <a href="https://github.com/VladimirTyalo" target="_blank">https://github.com/VladimirTyalo</a>
               </td>
@@ -95,14 +96,25 @@
 
 
         <section class="education">
-          <h1>Образование</h1>
-          <table>
-            <col class="education__column-one">
-            <col class="education__column-two">
-            <col class="education__column-three">
+          <h2>Образование</h2>
 
+          <div class="education__title">ВУЗы</div>
+          <table class="education__universities">
+            <caption class="education__header">ВУЗы</caption>
+            <tr class="education__item ">
+              <td class="education__date">1999 - 2002</td>
+              <td class="education__descr">Самарский институт инженеров железнодорожного транспорта</td>
+            </tr>
             <tr class="education__item">
-              <th class="education__descr" rowspan="7">Курсы:</th>
+              <td class="education__date">1997 - 1999</td>
+              <td class="education__descr">Самарский государственный аэрокосмический университет</td>
+            </tr>
+          </table>
+
+          <div class="education__title">Курсы</div>
+          <table class="education__courses">
+            <caption class="education__header">Курсы</caption>
+            <tr class="education__item">
               <td class="education__date">05.2016 - 06.2016</td>
               <td class="education__descr">html academy: HTML & CSS
                 advanced course
@@ -130,26 +142,16 @@
               <td class="education__date">11.2014 - 12.2014</td>
               <td class="education__descr">Coursera: Programming Languages (SML, Scheme, Ruby)</td>
             </tr>
-            <tr class="education__item education__item--courses">
+            <tr class="education__item ">
               <td class="education__date">12.2013 - 01.2014</td>
               <td class="education__descr">Edx: Introduction to Computer Science and Programming (Python)</td>
-            </tr>
-
-            <tr class="education__item education__item--universities">
-              <th class="education__header" rowspan="2">ВУЗы </th>
-              <td class="education__date">1999 - 2002</td>
-              <td class="education__descr">Самарский институт инженеров железнодорожного транспорта</td>
-            </tr>
-            <tr class="education__item">
-              <td class="education__date">1997 - 1999</td>
-              <td class="education__descr">Самарский государственный аэрокосмический университет</td>
             </tr>
           </table>
 
         </section>
 
         <section class="skills">
-          <h1 class="details__title">Навыки</h1>
+          <h2 class="details__title">Навыки</h2>
           <ul class="skills__list">
             <li class="skills__item">
               <span>HTML</span>
@@ -181,9 +183,9 @@
         </section>
 
         <section class="coding">
-          <h1 class="coding__title">Опыт разработки</h1>
+          <h2 class="coding__title">Опыт разработки</h2>
           <ul class="coding__list">
-            <li class="coding__sample">2016 Создание адаптивного сайта  "Mishka", используя подход mobile-first,
+            <li class="coding__sample">2016 Создание адаптивного сайта "Mishka", используя подход mobile-first,
               БЭМ методологию и SASS препроцессор.
             </li>
 
@@ -197,9 +199,9 @@
         </section>
 
         <section class="employment">
-          <h1>
+          <h2>
             Опыт работы
-          </h1>
+          </h2>
           <div class="employment__mobile">ОАО "Российские железные дороги"</div>
           <table>
             <col class="employment__column-one">
@@ -211,7 +213,7 @@
               </td>
               <td>
                 <b>Поездной диспетчер</b>
-                : руководство движением поездов, организация формировния поездов и рациональное распределение локомотивов, оперативное  руководство работниками станций (до 40 станций) и работниками смежных служб, ведение графика движения, журналов и другой документации.
+                : руководство движением поездов, организация формировния поездов и рациональное распределение локомотивов, оперативное руководство работниками станций (до 40 станций) и работниками смежных служб, ведение графика движения, журналов и другой документации.
               </td>
             </tr>
             <tr>
