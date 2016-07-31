@@ -12,7 +12,12 @@
   <body>
     <header class="header">
       <div class="container">
+        <div class="header__lang">
+          <a class="header__lang-link" href="resume-ru.html" >rus</a>
+          <a  class="header__lang-link">eng</a>
+        </div>
         <nav class="header__menu">
+          <div class="header__menu-icon header__menu-icon--close"></div>
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a href="#portfolio" class="header__menu-link">portfolio</a>
@@ -47,7 +52,7 @@
             <li class="portfolio__sample">
               <img class="portfolio__img" src="img/technomart-preview.jpg" alt="technomart main page" width="500" height="373">
               <div class="portfolio__sample-info">
-                <a href="https://github.com/VladimirTyalo/32147-technomart" class="btn portfolio__btn" target="_blank">github</a>
+                <a class="btn portfolio__btn portfolio__btn--github"  href="https://github.com/VladimirTyalo/32147-technomart"  target="_blank">github</a>
                 <a class="btn portfolio__btn" href="http://tyalotechnomart.herokuapp.com/" target="_blank">preview</a>
                 <div class="portfolio__sample-description">
                   HTML, CSS, javaScript
@@ -58,7 +63,7 @@
             <li class="portfolio__sample">
               <img class="portfolio__img" src="img/gllacy.jpg" alt="gllacy main page" width="500" height="373">
               <div class="portfolio__sample-info">
-                <a href="https://github.com/htmlacademy-htmlcss/32147-gllacy" class="btn portfolio__btn" target="_blank">github</a>
+                <a href="https://github.com/htmlacademy-htmlcss/32147-gllacy" class="btn portfolio__btn portfolio__btn--github" target="_blank" >github</a>
                 <a class="btn portfolio__btn" href="http://tyalogllacy.herokuapp.com/" target="_blank">preview</a>
                 <div class="portfolio__sample-description">
                   HTML, CSS, javaScript
@@ -68,7 +73,7 @@
             <li class="portfolio__sample">
               <img class="portfolio__img" src="img/mishka-preview.jpg" alt="mishka main page" width="500" height="390">
               <div class="portfolio__sample-info">
-                <a  class="btn portfolio__btn" href="https://github.com/VladimirTyalo/32147-mishka" target="_blank">github</a>
+                <a  class="btn portfolio__btn portfolio__btn--github" href="https://github.com/VladimirTyalo/32147-mishka" target="_blank">github</a>
                 <a  class="btn portfolio__btn" href="https://tyalomishka.herokuapp.com/" target="_blank">preview</a>
                 <div class="portfolio__sample-description">
                   HTML, БЭМ, graceful degradation, ретинизация, svg-sprite,
@@ -217,5 +222,6 @@
 </symbol>
     </svg>
 
+    <script src="js/index.js"></script>
   </body>
 </html>
