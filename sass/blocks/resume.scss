@@ -9,7 +9,7 @@
     overflow: hidden;
   }
 
-  h1 {
+  h2 {
     @include font(20px, 30px);
     font-family: Neucha, Arial, serif;
     color: #3d7b49;
@@ -20,7 +20,6 @@
   td {
     font-family: Bitter, Arail, serif;
     font-weight: normal;
-    @include font(16px, 30px);
   }
 
   &__photo-wrapper {

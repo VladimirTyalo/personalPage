@@ -1,69 +1,109 @@
 .education {
   width: 100%;
-  margin-bottom: 20px;
 
-  h1 {
+  h2 {
     background-image: url("../img/icons/university.svg");
     background-repeat: no-repeat;
     background-size: 33px 33px;
     background-position: 10px -3px;
   }
 
+  &__title {
+    display: none;
+  }
+
   table {
-    width: 100%;
     border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
-  th {
+  td {
+    border-bottom: 1px solid grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  caption {
+    @include font(18px, 20px);
+    font-weight: bold;
     text-align: left;
-    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
-  &__item--universities td,
-  &__item--universities th {
-    border-top: 1px solid grey;
-    padding-top: 20px;
+  &__courses .education__descr {
+    @include font(14px, 20px);
   }
 
-  &__item--courses td {
-    padding-bottom: 20px;
-  }
-
-  &__date {
+  &__courses .education__date {
     vertical-align: top;
-  }
-
-  &__column-one {
+    @include font(12px);
+    min-width: 110px;
     width: 20%;
   }
 
-  &__column-two {
+
+  &__universities .education__descr {
+    @include font(14px);
+  }
+
+  &__universities .education__date {
+    vertical-align: top;
+    @include font(12px);
+    min-width: 80px;
+    text-align: center;
     width: 20%;
   }
 
-  &__column-three {
-    width: 60%;
-  }
 }
 
-@media (max-width: 790px) {
+@media (min-width: 720px) {
   .education {
 
-    th {
-      display: none;
+    h2 {
+      width: 100%;
     }
 
-    td {
+    display: flex;
+    flex-flow: row wrap;
+
+    &__title {
+      display: block;
+      width: 15%;
+      @include font(18px, 20px);
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 9px;
       border-bottom: 1px solid grey;
     }
 
-
-    &__column-two {
-      width: 20%;
+    table {
+      width: 85%;
     }
 
-    &__column-three {
-      width: 80%;
+    caption {
+      display: none;
+    }
+
+
+    &__courses .education__descr {
+      @include font(18px);
+    }
+
+    &__courses .education__date {
+      @include font(16px);
+      min-width: 150px;
+    }
+
+
+    &__universities .education__descr {
+      @include font(18px);
+    }
+
+    &__universities .education__date {
+      @include font(16px);
+      text-align: left;
     }
   }
 }

@@ -34,10 +34,6 @@
 
   &__sample-info {
     position: absolute;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
     background: rgba(3, 19, 30, 0.7);
     top: -500px;
     left: 0;
@@ -46,7 +42,7 @@
     height: auto;
     transition: top 0.2s;
     font-size: 0;
-    padding: 5px;
+    padding: 10px;
   }
 
   &__img {
@@ -56,17 +52,23 @@
   }
 
   &__btn {
-    flex: 0 1 45%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    @include block-align();
+    @include font(14px, 18px);
+    width: 47%;
+    margin-top: 10px;
+    padding: 10px 20px 8px 20px;
+    margin-bottom: 5px;
+
+    &--github {
+      margin-right: 5%;
+    }
   }
 
   &__sample-description {
     color: white;
     @include font(16px, 20px);
     padding: 10px;
+    text-align: center;
   }
 }
 
@@ -81,10 +83,14 @@
 @media (min-width: 700px) {
 
   .portfolio__list {
-    justify-content: space-between;
+
   }
   .portfolio__sample {
-    width: 45%;
+    width: 48%;
+
+    &:nth-of-type(2n + 1) {
+      margin-right: 2%;
+    }
   }
 
   .portfolio__sample-description {

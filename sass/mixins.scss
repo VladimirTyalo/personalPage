@@ -34,3 +34,11 @@
   background-size: $size $size;
   background-position: center center;
 }
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

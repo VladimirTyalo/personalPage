@@ -14,22 +14,23 @@
     <header class="header">
       <div class="container">
         <div class="header__lang">
-          <a class="header__lang-link" href="resume-ru.html" >rus</a>
-          <a  class="header__lang-link">eng</a>
+          <a class="header__lang-link" href="resume-ru.html">rus</a>
+          <a class="header__lang-link">eng</a>
         </div>
         <nav class="header__menu">
+          <div class="header__menu-icon header__menu-icon--close"></div>
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a href="/" class="header__menu-link">home</a>
             </li>
             <li class="header__menu-item">
-              <a href="/#portfolio" class="header__menu-link">portfolio</a>
+              <a href="#portfolio" class="header__menu-link">portfolio</a>
             </li>
             <li class="header__menu-item">
-              <a href="/#contacts" class="header__menu-link">contacts</a>
+              <a href="#contacts" class="header__menu-link">contacts</a>
             </li>
             <li class="header__menu-item">
-              <a class="header__menu-link">resume</a>
+              <a href="resume.html" class="header__menu-link">resume</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +45,7 @@
           <img class="resume__photo" src="img/my_photo.jpg" alt="Tyalo Vladimir Ivanovich" width="200" height="150">
         </div>
         <section class="details">
-          <h1>Personal details</h1>
+          <h2>Personal details</h2>
           <table class="details__list">
             <tr class="details__item">
               <td class="details__key">Name:</td>
@@ -94,14 +95,24 @@
 
 
         <section class="education">
-          <h1>Education</h1>
-          <table>
-            <col class="education__column-one">
-            <col class="education__column-two">
-            <col class="education__column-three">
-
+          <h2>Education</h2>
+          <div class="education__title">Universities</div>
+          <table class="education__universities">
+            <caption class="education__header" rowspan="2">Universities:</caption>
             <tr class="education__item">
-              <th class="education__descr" rowspan="7">Courses:</th>
+              <td class="education__date">1999 - 2002</td>
+              <td class="education__descr">Samara Institute of Railway Communications</td>
+            </tr>
+            <tr class="education__item">
+              <td class="education__date">1997 - 1999</td>
+              <td class="education__descr">Samara State Aerospace University</td>
+            </tr>
+          </table>
+
+          <div class="education__title">Courses:</div>
+          <table class="education__courses">
+            <caption class="education__header" rowspan="7">Courses:</caption>
+            <tr class="education__item">
               <td class="education__date">05.2016 - 06.2016</td>
               <td class="education__descr">html academy: HTML & CSS
                 advanced course
@@ -129,26 +140,15 @@
               <td class="education__date">11.2014 - 12.2014</td>
               <td class="education__descr">Coursera: Programming Languages (SML, Scheme, Ruby)</td>
             </tr>
-            <tr class="education__item education__item--courses">
+            <tr class="education__item">
               <td class="education__date">12.2013 - 01.2014</td>
               <td class="education__descr">Edx: Introduction to Computer Science and Programming (Python)</td>
             </tr>
-
-            <tr class="education__item education__item--universities">
-              <th class="education__header" rowspan="2">Universities:</th>
-              <td class="education__date">1999 - 2002</td>
-              <td class="education__descr">Samara State University of Transport Communications</td>
-            </tr>
-            <tr class="education__item">
-              <td class="education__date">1997 - 1999</td>
-              <td class="education__descr">Samara State Aerospace University</td>
-            </tr>
           </table>
-
         </section>
 
         <section class="skills">
-          <h1 class="details__title">Skills</h1>
+          <h2 class="details__title">Skills</h2>
           <ul class="skills__list">
             <li class="skills__item">
               <span>HTML</span>
@@ -164,7 +164,7 @@
               <span>Node.js</span>
               <span>gulp</span>
               <span>express</span>
-              <span>mongoose</span>
+              <!--<span>mongoose</span>-->
               <span>MongoDB</span>
               <span>heroku</span>
             </li>
@@ -180,7 +180,7 @@
         </section>
 
         <section class="coding">
-          <h1 class="coding__title">Technical experience</h1>
+          <h2 class="coding__title">Technical experience</h2>
           <ul class="coding__list">
             <li class="coding__sample">2016 Make responsive web site "Mishka" using mobile-first approach,
               BEM methodology and SASS preprocessor.
@@ -199,7 +199,7 @@
                 <a href="">Deque</a>,
                 <a href="">Line recognition</a>,
                 <a href="">8Pazzle</a>,
-                <a href="">KDTree </a>
+                <a href="">KDTree</a>
                 ) for the Coursera's Algorithms course</span>
             </li>
 
@@ -208,9 +208,9 @@
         </section>
 
         <section class="employment">
-          <h1>
+          <h2>
             Employment
-          </h1>
+          </h2>
           <div class="employment__mobile">Russian Railways</div>
           <table>
             <col class="employment__column-one">
@@ -317,9 +317,9 @@
         <path d="M29.276,31.149c-0.545,1.787-2.19,3.1-4.152,3.1c-1.963,0-3.608-1.312-4.154-3.1H4.001c-1.071,0-2.083-0.249-2.991-0.681     v11.267c0,2.2,1.8,4,4,4h40.226c2.2,0,4-1.8,4-4V30.469c-0.908,0.432-1.92,0.681-2.99,0.681L29.276,31.149L29.276,31.149z" fill="#4fa664"/>
         <path d="M46.078,10.917h-9.602c-0.579-3.626-3.722-6.408-7.508-6.408h-7.694c-3.787,0-6.927,2.782-7.508,6.408h-9.6     c-2.292,0-4.167,1.8-4.167,4v9.233c0,2.208,1.791,4,4,4h16.78c0.057-1.149,0.551-2.186,1.332-2.933     c0.024-0.022,0.052-0.041,0.077-0.063c0.173-0.159,0.353-0.309,0.55-0.439c0.07-0.047,0.15-0.079,0.223-0.121     c0.162-0.093,0.322-0.19,0.497-0.262c0.137-0.057,0.285-0.09,0.429-0.133c0.124-0.037,0.242-0.086,0.371-0.112     C24.538,24.03,24.827,24,25.122,24c0.296,0,0.584,0.031,0.863,0.087c0.128,0.026,0.247,0.075,0.372,0.112     c0.144,0.043,0.29,0.076,0.429,0.134c0.174,0.072,0.333,0.168,0.495,0.261c0.073,0.043,0.153,0.075,0.225,0.122     c0.197,0.129,0.376,0.279,0.549,0.438c0.025,0.023,0.056,0.041,0.078,0.065c0.782,0.748,1.275,1.782,1.332,2.933h16.78     c2.209,0,4-1.791,4-4v-9.233C50.245,12.717,48.37,10.917,46.078,10.917z M17.619,10.917c0.51-1.541,1.947-2.664,3.657-2.664     h7.694c1.709,0,3.146,1.123,3.656,2.664H17.619z" fill="#4fa664"/>
       </symbol>
-
     </svg>
 
+    <script src="js/index.js"></script>
 
   </body>
 </html>
