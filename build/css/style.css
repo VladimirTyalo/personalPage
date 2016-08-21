@@ -384,6 +384,9 @@ a {
   white-space: nowrap;
   color: black; }
 
+p a {
+  color: #2a6fb7; }
+
 ul {
   margin: 0;
   padding: 0; }
@@ -745,10 +748,10 @@ img {
       color: black; }
 
 .portfolio {
+  padding-top: 20px;
   background: linear-gradient(#bbb, transparent 1px), linear-gradient(90deg, #bbb, transparent 1px);
   background-size: 20px 20px;
-  background-position: center center;
-  padding-top: 20px; }
+  background-position: center center; }
   .portfolio .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -758,55 +761,55 @@ img {
     width: 100%;
     text-align: center; }
   .portfolio__list {
-    list-style: none;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    list-style: none;
     -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
-    width: 100%; }
+        flex-flow: row wrap; }
   .portfolio__sample {
     position: relative;
+    overflow: hidden;
     width: 100%;
     margin-bottom: 50px;
     transition: -webkit-filter 1s;
     transition: filter 1s;
     transition: filter 1s, -webkit-filter 1s;
-    overflow: hidden;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5); }
   .portfolio__sample:hover .portfolio__sample-info {
     top: 0; }
   .portfolio__sample-info {
+    font-size: 0;
     position: absolute;
-    background: rgba(3, 19, 30, 0.7);
     top: -500px;
     left: 0;
     width: 100%;
-    min-height: 100%;
     height: auto;
-    transition: top 0.2s;
-    font-size: 0;
-    padding: 10px; }
+    min-height: 100%;
+    padding: 10px;
+    transition: top .2s;
+    background: rgba(3, 19, 30, 0.7); }
   .portfolio__img {
     display: block;
     width: 100%;
     height: 100%; }
   .portfolio__btn {
+    width: 47%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px 20px 8px 20px;
     display: inline-block;
     vertical-align: top;
     font-size: 0.875rem;
-    line-height: 1.125rem;
-    width: 47%;
-    margin-top: 10px;
-    padding: 10px 20px 8px 20px;
-    margin-bottom: 5px; }
+    line-height: 1.125rem; }
     .portfolio__btn--github {
       margin-right: 5%; }
   .portfolio__sample-description {
+    padding: 10px;
+    text-align: center;
     color: white;
     font-size: 1rem;
-    line-height: 1.25rem;
-    padding: 10px;
-    text-align: center; }
+    line-height: 1.25rem; }
 
 .resume {
   width: auto; }

@@ -1,6 +1,6 @@
 .portfolio {
-  @include graph-paper(20px);
   padding-top: 20px;
+  @include graph-paper(20px);
 
   .container {
     flex-wrap: wrap;
@@ -13,19 +13,19 @@
   }
 
   &__list {
-    list-style: none;
     display: flex;
-    flex-flow: row wrap;
     width: 100%;
+    list-style: none;
+    flex-flow: row wrap;
   }
 
   &__sample {
     position: relative;
+    overflow: hidden;
     width: 100%;
     margin-bottom: 50px;
     transition: filter 1s;
-    overflow: hidden;
-    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .5);
   }
 
   &__sample:hover .portfolio__sample-info {
@@ -33,16 +33,16 @@
   }
 
   &__sample-info {
+    font-size: 0;
     position: absolute;
-    background: rgba(3, 19, 30, 0.7);
     top: -500px;
     left: 0;
     width: 100%;
-    min-height: 100%;
     height: auto;
-    transition: top 0.2s;
-    font-size: 0;
+    min-height: 100%;
     padding: 10px;
+    transition: top .2s;
+    background: rgba(3, 19, 30, .7);
   }
 
   &__img {
@@ -52,12 +52,12 @@
   }
 
   &__btn {
-    @include block-align();
-    @include font(14px, 18px);
     width: 47%;
     margin-top: 10px;
-    padding: 10px 20px 8px 20px;
     margin-bottom: 5px;
+    padding: 10px 20px 8px 20px;
+    @include block-align();
+    @include font(14px, 18px);
 
     &--github {
       margin-right: 5%;
@@ -65,30 +65,24 @@
   }
 
   &__sample-description {
-    color: white;
-    @include font(16px, 20px);
     padding: 10px;
     text-align: center;
+    color: white;
+    @include font(16px, 20px);
   }
 }
 
 @media screen and (min-width: 500px) {
-
   .portfolio__sample-description {
     @include font(20px, 26px);
   }
-
 }
 
 @media (min-width: 700px) {
-
   .portfolio__title {
     text-align: left;
   }
 
-  .portfolio__list {
-
-  }
   .portfolio__sample {
     width: 48%;
 
@@ -100,9 +94,4 @@
   .portfolio__sample-description {
     @include font(16px, 20px);
   }
-
 }
-
-
-
-
