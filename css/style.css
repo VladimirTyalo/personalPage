@@ -929,6 +929,8 @@ img {
   @media (min-width: 700px) {
   .about__story {
     width: 40%; }
+  .portfolio__title {
+    text-align: left; }
   .portfolio__sample {
     width: 48%; }
   .portfolio__sample:nth-of-type(2n + 1) {
