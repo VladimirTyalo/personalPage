@@ -2,13 +2,10 @@
  * Created by vladimir on 7/31/16.
  */
 (function () {
-    "use strict"
+    "use strict";
 
   var burgerBtn = document.querySelector(".header__menu-icon");
   var modalMenu = document.querySelector(".header__menu-list");
-
-  console.log("Hello");
-
 
   initMenu();
   addListeners();
