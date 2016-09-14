@@ -24,6 +24,7 @@
     res.redirect("/");
   });
 
+
   app.get("/resume", function (req, res) {
     res.send("Not implemented yet");
   });
