@@ -772,6 +772,7 @@ img {
     overflow: hidden;
     width: 100%;
     margin-bottom: 50px;
+    min-height: 270px;
     transition: -webkit-filter 1s;
     transition: filter 1s;
     transition: filter 1s, -webkit-filter 1s;

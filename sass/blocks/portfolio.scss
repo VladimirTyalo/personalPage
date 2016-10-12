@@ -24,6 +24,7 @@
     overflow: hidden;
     width: 100%;
     margin-bottom: 50px;
+    min-height: 270px;
     transition: filter 1s;
     box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .5);
   }
@@ -48,7 +49,7 @@
   &__img {
     display: block;
     width: 100%;
-    height: 100%;
+    height:100%;
   }
 
   &__btn {
