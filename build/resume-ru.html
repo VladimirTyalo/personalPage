@@ -28,9 +28,6 @@
               <a href="index-ru.html#portfolio" class="header__menu-link">Портфолио</a>
             </li>
             <li class="header__menu-item">
-              <a href="index-ru.html#contacts" class="header__menu-link">Контакты</a>
-            </li>
-            <li class="header__menu-item">
               <a class="header__menu-link">Резюме</a>
             </li>
           </ul>
@@ -166,7 +163,6 @@
               <span>Node.js</span>
               <span>gulp</span>
               <span>express</span>
-              <!--<span>mongoose</span>-->
               <span>MongoDB</span>
             </li>
             <li class="skills__item">
@@ -183,16 +179,27 @@
         <section class="coding">
           <h2 class="coding__title">Опыт разработки</h2>
           <ul class="coding__list">
-            <li class="coding__sample">2016 Верстка адаптивного сайт "The Band", адаптация десктопного шаблона для планшетов и мобильных устройств, кастомизация аудиоплеера с помощью javascript</li>
-            <li class="coding__sample">2016 Верстка адаптивного сайта "Mishka", используя подход mobile-first,
-              БЭМ методологию и SASS препроцессор.
+            <li class="coding__sample">2016 Разработал одностраничное  приложение
+              <a href="http://cities-weather-forecast.herokuapp.com/" target="_blank">"Weather forecast"</a>. Кроме использования новых для меня jQuery и BlueBird (Promise) решил освежить свои скромные знания mongoDB и добавил базу данных городов, размещенную на сервисе mlab, для отображения в autocomplete box. Возникла небольшая трудность со смешанным содержимым, так как сервис openweathermap.org/api не отдает данные по https. Пришлось создать сервер (express, request), который делает запрос по http на openweathermap.org/api и отдает данные браузеру по https. Для тестирования кода использовал Mocha и Chai.
             </li>
 
-            <li class="coding__sample">2016 Статическая верстка макета, предоставленного "htmlacademy", реализация базовой функциональности javaScript.
+
+            <li class="coding__sample">2016 Сверстал  сайт
+              <a href="https://vladimirtyalo.github.io/the-band/" target="_blank">"The Band"</a>,  c адоптацией десктопного шаблона (PSD) для планшетов и мобильных устройств, кастомизировал аудиоплеер с помощью javascript. Код плеера разбил на модули, а для сборки использовал  browserify. Для проверки качества кода применял jshint. </li>
+
+            <li class="coding__sample">2016 Сверстал полностью адаптивный сайт (для разных значений ширины и плотности пикселей экранов) -
+              <a href="http://tyalomishka.herokuapp.com" target="_blank">Мишка</a>, используя подход mobile-first,
+              БЭМ методологию и SASS препроцессор.  В качестве ароматизатора задач  выбрал gulp с набором npm плагинов - autoprefixer, postcss, imagemin и др. JavaScript использовал для меню и слайдера.
+            </li>
+            <li class="coding__sample">2016 Сверстал чуть более сложный макет
+              <a href="http://tyalogllacy.herokuapp.com/" target="_blank">Глеси</a>. Добавил небольшую адаптивность  (резиновая верстка), использовав flex для построения сетки.</li>
+
+            <li class="coding__sample">2016 Сверстал статический сайт
+              <a href="http://tyalotechnomart.herokuapp.com/" target="_blank">Техномарт</a> по фотошоп макету (PSD), предоставленному "htmlacademy", реализовал базовую функциональность на javaScript.
             </li>
 
             <li class="coding__sample">
-              <span class="coding__descr">2015 Реализация различных алгоритмов на языке java в рамках курса Algorithms от Coursera.</span>
+              <span class="coding__descr">2015 Реализовал различные алгоритмы и структуры данных (Percolation, WordNet, Deque, Seam Carving, Line pattern recognition, 8-Puzzle )  на языке java в рамках курса Algorithms от Coursera.</span>
             </li>
           </ul>
         </section>

@@ -43,7 +43,11 @@
     min-height: 100%;
     padding: 10px;
     transition: top .2s;
-    background: rgba(3, 19, 30, .7);
+    background: rgba(3,19,30,.7);
+    flex-flow: row wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
   &__img {
@@ -53,6 +57,7 @@
   }
 
   &__btn {
+
     width: 47%;
     margin-top: 10px;
     margin-bottom: 5px;

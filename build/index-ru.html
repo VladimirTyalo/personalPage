@@ -39,9 +39,30 @@
         <div class="container">
           <h1 class="about__title">Владимир Тяло</h1>
           <img class="about__img" src="img/my-photo.jpg" alt="my photo" width="300" height="225">
-          <p class="about__story">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi debitis impedit repudiandae ullam! Adipisci aut deserunt dicta dolorem eum excepturi incidunt inventore, mollitia pariatur perferendis quibusdam quisquam quo ullam? A enim officiis sint vero! Aut, autem blanditiis culpa dicta dignissimos dolorem doloribus dolorum eius eum ex ipsum laudantium omnis provident quibusdam sed sit vitae voluptatem voluptatum. Aliquam delectus deserunt, enim, exercitationem, ipsum itaque laboriosam necessitatibus nemo porro quas quidem reprehenderit sint vel? Ab at atque consequuntur dolore dolores eius est eum in ipsa laudantium maxime minus, nobis nostrum officia officiis, quaerat ratione sit suscipit tempora temporibus totam veritatis voluptates!
-          </p>
+          <div class="about__story">
+            <p> Привет! Меня зовут Владимир. Большую часть свой жизни я работал на железной дороге. За это время прошел несколько ступеней по карьерной лестнице, обучил премудростям работы поездного диспетчера дюжину новичков, заслужил уважение коллег и скупое одобрение руководства.</p>
+            <div class="about__extra">
+              <input id="story" type="checkbox" style="display:none" checked>
+              <label for="story" class="btn btn--story">Моя история</label>
+              <p class="about__extra-content"> Несколько лет назад я начал повторно изучать английский язык. Когда понимание беглой английской речи перестало быть проблемой я стал искать возможность приложить свои навыки и наткнулся на оду из открытых образовательных онлайн платформ - edx. Меня всегда привлекала математика и технологии поэтому я выбрал Introduction to Computer Science and Programming от MIT. Наверное после, неожиданно для себя, успешного окончания в начале 2014 года этого курса я задумался о смене карьеры. Последующие полтора года все свободное время я тратил на изучение программирования, прошел еще несколько курсов на Coursera (Algorithms, Programming languages), украинский проект JavaRush(28 уровень) и некоторые другие. И все же свободного времени было не так много и когда накопилось достаточно знаний, средств к существованию и уверенности в себе я решил уйти с немного надоевшей работы и потратить какое-то время на изучение веб технологий.</p>
+              <p class="about__extra-content" >Изучать веб разработку начал с основ - HTML и CSS. В феврале 2016 г. успешно окончил базовый курс HTML академии, а в июне продвинутый. Это оказалось немного сложнее и интересней чем я ожидал. Зато теперь я знаю очень много страшных, но очень полезных слов: BEM, npm, Node.js, SASS, LESS, postCSS, gulp, autoprefixer, responsive design, retinisation, picturefill, и др.
+              </p>
+            </div>
+            <p>
+              С недавних пор я увлекся веб технологиями. Сверстал несколько сайтов и одностраничных приложений, часть из которых можно увидеть
+              <a href="#portfolio">ниже</a>
+              . В каждом из этих проектов добивался максимального соответствия PSD макету (pixel perfect) и поддержки всех современных (и не очень) браузеров.
+            </p>
+
+            <p> В разработке стараюсь придерживаться советов Роберта Мартина и писать чистый код (часто помогает eslint). Знаком с SOLID принципами объектно-ориентированного дизайна и некоторыми паттернами проектирования, но в javascript меня больше привлекают функциональные возможности языка (first class functions, map, filter, reduce). В написании стилей понравился модульный подход совмещающий БЭМ и SASS (проекты
+              <a href="#mishka">"Mishka"</a>
+              и
+              <a href="##the-band">"The Band"</a>
+              ). Для написания более надежного кода начал изучать тестирование с "Mocha" и "Chai" (проект
+              <a href="#weather">"Weather"</a>
+              ).
+            </p>
+          </div>
         </div>
       </section>
 
@@ -49,7 +70,7 @@
         <div class="container">
           <h1 class="portfolio__title">Мои работы:</h1>
           <ul class="portfolio__list">
-            <li class="portfolio__sample">
+            <li class="portfolio__sample" id="technomart">
               <img class="portfolio__img" src="img/technomart-preview.jpg" alt="technomart main page" width="500" height="373">
               <div class="portfolio__sample-info">
                 <a class="btn portfolio__btn portfolio__btn--github" href="https://github.com/VladimirTyalo/32147-technomart" target="_blank">github</a>
@@ -62,7 +83,7 @@
               </div>
             </li>
 
-            <li class="portfolio__sample">
+            <li class="portfolio__sample" id="gllacy">
               <img class="portfolio__img" src="img/gllacy.jpg" alt="gllacy main page" width="500" height="373">
               <div class="portfolio__sample-info">
                 <a href="https://github.com/VladimirTyalo/32147-gllacy" class="btn portfolio__btn portfolio__btn--github" target="_blank">github</a>
@@ -72,7 +93,7 @@
                 </div>
               </div>
             </li>
-            <li class="portfolio__sample">
+            <li class="portfolio__sample" id="mishka">
               <img class="portfolio__img" src="img/mishka-preview.jpg" alt="mishka main page" width="500" height="390">
               <div class="portfolio__sample-info">
                 <a class="btn portfolio__btn portfolio__btn--github" href="https://github.com/VladimirTyalo/32147-mishka" target="_blank">github</a>
@@ -86,7 +107,7 @@
             </li>
 
 
-            <li class="portfolio__sample">
+            <li class="portfolio__sample" id="#the-band">
               <img class="portfolio__img" src="img/the-band.jpg" alt="the band landing page" width="500" height="373">
               <div class="portfolio__sample-info">
                 <a class="btn portfolio__btn portfolio__btn--github" href="https://github.com/VladimirTyalo/the-band" target="_blank">github</a>
@@ -98,7 +119,7 @@
               </div>
             </li>
 
-            <li class="portfolio__sample">
+            <li class="portfolio__sample" id="weather">
               <img class="portfolio__img" src="img/weather-app-min.jpg" alt="weather forecast application page" width="500" height="373">
               <div class="portfolio__sample-info">
                 <a class="btn portfolio__btn portfolio__btn--github" href="https://github.com/VladimirTyalo/weather" target="_blank">github</a>

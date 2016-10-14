@@ -364,6 +364,23 @@ textarea {
   -webkit-appearance: button;
   /* 1 */ }
 
+@keyframes toZeroHeight {
+  0% {
+    transform: scaleY(1); }
+  100% {
+    transform: scaleY(0); } }
+
+@keyframes bounce {
+  0%, 30%, 70%, 100% {
+    transform: translateY(0); }
+  15%, 50%, 85% {
+    transform: translateY(4px); } }
+
+.hide {
+  animation-name: toZeroHeight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
 *,
 *::before,
 *::after {
@@ -382,10 +399,10 @@ a {
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  color: black; }
+  color: #1e74b5; }
 
-p a {
-  color: #2a6fb7; }
+a:hover {
+  color: #e39810; }
 
 ul {
   margin: 0;
@@ -412,6 +429,11 @@ img {
   -ms-flex-pack: center;
       justify-content: center; }
 
+.about__extra-content {
+  background: #fefff3;
+  padding-right: 5px;
+  padding-left: 5px; }
+
 .about__title {
   font-size: 2rem;
   -ms-flex: 1 0 100%;
@@ -436,25 +458,67 @@ img {
   margin-bottom: 20px;
   font-size: 1.125rem;
   line-height: 1.625rem; }
+  .about__story p:nth-child(1):first-letter {
+    font-size: 2em;
+    padding: 0.1em;
+    font-family: Bitter,Arail,serif;
+    text-shadow: 2px 0 2px  black; }
+
+#story:checked ~ p {
+  display: none; }
+
+#story:not(:checked) ~ label::after {
+  transform: rotate(180deg);
+  animation-name: none; }
 
 .btn {
+  cursor: pointer;
+  font-weight: bold;
   display: block;
+  padding: 10px;
+  transition: all .3s;
   text-align: center;
   vertical-align: baseline;
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 10px;
   text-decoration: none;
+  text-transform: uppercase;
+  color: white;
   border: 2px solid white;
   border-radius: 10px;
-  color: white;
-  transition: all 0.3s; }
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  transition: all 0.7s; }
   .btn:hover {
     background: #4fa664; }
   .btn:active {
-    opacity: 0.5; }
+    opacity: .5; }
+  .btn--story {
+    display: inline-block;
+    font-size: 0.8em;
+    font-waight: normal;
+    background: #4fa664;
+    padding: 5px 70px 5px 10px;
+    text-transform: lowercase;
+    position: relative; }
+    .btn--story::after {
+      position: absolute;
+      content: "";
+      top: .6rem;
+      right: 1em;
+      width: 0;
+      height: 0;
+      border-left: .5em solid transparent;
+      border-right: .5em solid transparent;
+      border-top: 1.1em solid #fefff3;
+      transition: all 0.5s;
+      animation-name: bounce;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards; }
+    .btn--story:hover {
+      background: rgba(3, 19, 30, 0.7); }
+    .btn--story:active {
+      background: whitesmoke;
+      color: black; }
 
 .coding {
   width: 100%;
@@ -725,6 +789,11 @@ img {
     font-family: Bitter, Arail, serif;
     display: inline-block;
     padding: 20px 10px 20px 10px; }
+    .header__lang-link:hover {
+      background: rgba(3, 19, 30, 0.7); }
+    .header__lang-link:active {
+      background: whitesmoke;
+      color: black; }
   .header__menu-list {
     list-style: none;
     text-align: right; }
@@ -789,7 +858,15 @@ img {
     min-height: 100%;
     padding: 10px;
     transition: top .2s;
-    background: rgba(3, 19, 30, 0.7); }
+    background: rgba(3, 19, 30, 0.7);
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
   .portfolio__img {
     display: block;
     width: 100%;
@@ -931,8 +1008,20 @@ img {
   .header__menu-list {
     display: block; } }
   @media (min-width: 700px) {
+  .about__img {
+    margin: 20px;
+    margin-top: 0;
+    margin-right: 0;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+    float: right; }
   .about__story {
-    width: 40%; }
+    width: 100%; }
+  .about .container {
+    display: block; }
+  .about .container::after {
+    content: "";
+    display: table;
+    clear: both; }
   .portfolio__title {
     text-align: left; }
   .portfolio__sample {

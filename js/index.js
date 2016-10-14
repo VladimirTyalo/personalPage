@@ -7,12 +7,15 @@
   var burgerBtn = document.querySelector(".header__menu-icon");
   var modalMenu = document.querySelector(".header__menu-list");
 
+
+
   initMenu();
   addListeners();
 
   function initMenu() {
     toggleMenu();
   }
+
 
   function addListeners() {
     burgerBtn.addEventListener("click", function(ev) {

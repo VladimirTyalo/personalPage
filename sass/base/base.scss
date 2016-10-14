@@ -19,11 +19,11 @@ a {
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  color: black;
+  color: #1e74b5;
 }
 
-p a {
-  color: #2a6fb7;
+a:hover {
+  color: #e39810;
 }
 
 ul {

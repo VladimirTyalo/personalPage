@@ -38,6 +38,16 @@
     font-family: Bitter, Arail, serif;
     display: inline-block;
     padding: 20px 10px 20px 10px;
+
+
+    &:hover {
+      background: rgba(3, 19, 30, 0.7);
+    }
+
+    &:active {
+      background: whitesmoke;
+      color: black;
+    }
   }
 
 

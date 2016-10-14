@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:words="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,9 +39,32 @@
         <div class="container">
           <h1 class="about__title">Vladimir Tyalo</h1>
           <img class="about__img" src="img/my-photo.jpg" alt="my photo" width="300" height="225">
-          <p class="about__story">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi debitis impedit repudiandae ullam! Adipisci aut deserunt dicta dolorem eum excepturi incidunt inventore, mollitia pariatur perferendis quibusdam quisquam quo ullam? A enim officiis sint vero! Aut, autem blanditiis culpa dicta dignissimos dolorem doloribus dolorum eius eum ex ipsum laudantium omnis provident quibusdam sed sit vitae voluptatem voluptatum. Aliquam delectus deserunt, enim, exercitationem, ipsum itaque laboriosam necessitatibus nemo porro quas quidem reprehenderit sint vel? Ab at atque consequuntur dolore dolores eius est eum in ipsa laudantium maxime minus, nobis nostrum officia officiis, quaerat ratione sit suscipit tempora temporibus totam veritatis voluptates!
-          </p>
+          <div class="about__story">
+            <p> Hi! My name is Vladimir. A big part of my life I worked for the "Russian Railways". During this time I walked a few steps on the career ladder, taught a dozen of newcomers to my profession (train dispatcher), has earned the respect of colleagues and approval of the management.</p>
+            <div class="about__extra">
+              <input id="story" type="checkbox" style="display:none" checked>
+              <label for="story" class="btn btn--story">My story</label>
+              <p class="about__extra-content">A few years ago I started to study English. When I improve it enough to understand native speakers I started looking for an opportunity to apply my skills and came across one of the open online educational platforms - edx. I was always attracted to math and technology, so I chose the "Introduction to Computer Science and Programming" course from MIT. Unexpectedly for myself, I completed this course with success. Probably after this in 2014 year I started thinking about a career change. All the free time I spent learning to program, passed a few courses on Coursera (Algorithms, Programming languages), Ukrainian project JavaRush(28 level) and some others. Finally, when I acquired enough knowledge, livelihoods, and confidence in myself, and decided to quit my job and spent some time learning web technologies.</p>
+
+              <p class="about__extra-content"> My plan was to start with the basics first and learn  HTML and CSS. In February 2016 I successfully completed a basic course HTML of the Academy, and advanced course in June. It was a little more complicated and more interesting than I expected. But now I know a lot of scary, but very useful words: BEM, npm, Node.js, SASS, LESS, postCSS, gulp, autoprefixer, responsive design, retinisation, picturefill, etc.
+              </p>
+            </div>
+
+
+            <p>
+              Since early this year I make several sites and single page applications, some of which you could see
+              <a href="#portfolio">below</a>. In each of these projects, my goal was to maximize compliance with the PSD template (pixel perfect) and support all modern and few older browsers.
+            </p>
+
+            <p>In development, I strive to follow the advice of Robert Martin to write clean code (with the great help of eslint),  use  SOLID principles of object-oriented design, and apply design patterns. But in JavaScript, I'm more attracted to the functional side of the language (first class functions, map, filter, reduce). In writing CSS styles I prefer a modular approach using BEM and SASS (projects
+              <a href="#mishka">"Mishka"</a>
+              и
+              <a href="##the-band">"The Band"</a>
+              ). To write more robust code I started to learn testing with "Mocha" и "Chai" (project
+              <a href="#weather">"Weather"</a>
+              ).
+            </p>
+          </div>
         </div>
       </section>
 
