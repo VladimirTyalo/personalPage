@@ -28,7 +28,7 @@
 
 
   app.get("/resume/pdf", function(req, res) {
-    res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir_resume.pdf"));
+    res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir.zip"));
   });
 
   app.get("/resume/docx", function(req, res) {
