@@ -40,9 +40,10 @@
     var fileName = path.basename(fullName);
     var mimeType = mime.lookup(fullName);
 
-    //res.setHeader('Content-disposition', 'attachment; filename=' + fileName); // to download as attachment
-    res.setHeader('Content-disposition', 'filename=' + fileName); // to open pdf in browser
-    res.setHeader('Content-type', mimeType);
+    res.setHeader('Content-disposition', ' filename=' + fileName);
+
+    res.setHeader('Content-type', "application/pdf"); // TODO change to mimeTipe
+
 
     var filestream = fs.createReadStream(fullName);
     filestream.pipe(res);
