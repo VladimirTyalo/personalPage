@@ -4,12 +4,10 @@
   var express = require('express');
   var app = express();
   var path = require("path");
-<<<<<<< HEAD
   var fs = require('fs');
   var mime = require('mime');
   var PORT  = process.env.PORT || 8080;
-=======
->>>>>>> parent of 3b9acea... add stream to send pdf
+
 
   app.set("port", PORT);
   app.use(express.static(path.join(__dirname, 'build')));
@@ -38,25 +36,16 @@
   });
 
 
-<<<<<<< HEAD
   app.get("/resume/:file", function (req, res) {
     var fullName = path.join(__dirname, "/assets/" + req.params.file);
-
     var fileName = path.basename(fullName);
     var mimeType = mime.lookup(fullName);
 
-    res.setHeader('Content-disposition', 'attachment; filename=' + fileName);
-    res.setHeader('Content-type', mimeType);
-=======
-  app.get("/resume/pdf/:file", function(req, res) {
-    var name = req.params.file;
-    var funllName = path.join(__dirname, "/assets/" + name);
-    res.sendFile(funllName);
-  });
->>>>>>> parent of 3b9acea... add stream to send pdf
+    res.setHeader('Content-disposition', ' filename=' + fileName);
 
-  app.get("/resume/docx", function(req, res) {
-    //res.sendFile(path.join(__dirname, "/assets/tyalo_vladimir_resume.zip"));
+    res.setHeader('Content-type', "application/pdf");
+    res.sendFile(fullName);
+
   });
 
 
