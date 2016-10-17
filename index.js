@@ -28,11 +28,11 @@
 
 
   app.get("/resume/pdf", function(req, res) {
-    res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir_pdf_resume.zip"));
+    res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir_resume.pdf"));
   });
 
   app.get("/resume/docx", function(req, res) {
-    res.sendFile(path.join(__dirname, "/assets/tyalo_vladimir_docx_resume.zip"));
+    //res.sendFile(path.join(__dirname, "/assets/tyalo_vladimir_resume.zip"));
   });
 
 
