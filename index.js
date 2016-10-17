@@ -31,6 +31,13 @@
     res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir.zip"));
   });
 
+
+  app.get("/resume/pdf/:file", function(req, res) {
+    var name = req.params.file;
+    var funllName = path.join(__dirname, "/assets/" + name);
+    res.sendFile(funllName);
+  });
+
   app.get("/resume/docx", function(req, res) {
     //res.sendFile(path.join(__dirname, "/assets/tyalo_vladimir_resume.zip"));
   });
