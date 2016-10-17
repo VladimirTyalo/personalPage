@@ -6,8 +6,9 @@
   var path = require("path");
   var fs = require('fs');
   var mime = require('mime');
+  var PORT  = process.env.PORT || 8080;
 
-  app.set("port", (process.env.PORT || 8080));
+  app.set("port", PORT);
   app.use(express.static(path.join(__dirname, 'build')));
 
   app.engine('html', require('ejs').renderFile);
@@ -40,10 +41,9 @@
     var fileName = path.basename(fullName);
     var mimeType = mime.lookup(fullName);
 
-    res.setHeader('Content-disposition', ' filename=' + fileName);
+    res.setHeader('Content-disposition', 'attachment; filename=' + fileName);
 
-    res.setHeader('Content-type', "application/pdf"); // TODO change to mimeTipe
-
+    res.setHeader('Content-type', mimeType);
 
     var filestream = fs.createReadStream(fullName);
     filestream.pipe(res);
@@ -57,8 +57,8 @@
     res.sendStatus(404);
   });
 
-  app.listen(app.get("port"), function () {
-    console.log("Node app is running on port ", app.get("port"));
+  app.listen(PORT, function () {
+    console.log("Node app is running on port ", PORT);
   });
 
 })();
