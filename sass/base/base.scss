@@ -8,18 +8,18 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: Neucha, Arial, serif;
+  font-family: $font-cormorant;
 }
 
 h1, h2 {
-  font-family: Bitter, Arail, serif;
+  font-family: $font-garamond;
 }
 
 a {
   cursor: pointer;
   text-decoration: none;
   white-space: nowrap;
-  color: #1e74b5;
+  color: #2c86ad;
 }
 
 a:hover {

@@ -1,6 +1,5 @@
 .about {
 
-
   .container {
     justify-content: center;
   }
@@ -34,11 +33,10 @@
     @include font(18px, 26px);
 
     p:nth-child(1):first-letter {
-
       font-size: 2em;
       padding: 0.1em;
-      font-family: Bitter,Arail,serif;
-      text-shadow: 2px 0 2px  black;
+      font-family: $font-georgia;
+      text-shadow: 2px 0 2px black;
     }
   }
 }

@@ -3,272 +3,302 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&amp;subset=cyrillic" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant&amp;subset=cyrillic" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.min.css">
     <title>Владимир Тяло | Резюме</title>
   </head>
   <body class="resume-ru">
 
-    <header class="header">
-      <div class="container">
-        <div class="header__lang">
-          <a class="header__lang-link">rus</a>
-          <a class="header__lang-link" href="resume.html">eng</a>
+    <div class="blur-area">
+
+      <header class="header">
+        <div class="container">
+          <!--<div class="header__lang">-->
+          <!--<a class="header__lang-link">rus</a>-->
+          <!--<a class="header__lang-link" href="resume.html">eng</a>-->
+          <!--</div>-->
+          <nav class="header__menu">
+            <div class="header__menu-icon header__menu-icon--close"></div>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="index-ru.html" class="header__menu-link">Главная</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="index-ru.html#portfolio" class="header__menu-link">Портфолио</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link">Резюме</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header__menu">
-          <div class="header__menu-icon header__menu-icon--close"></div>
-          <ul class="header__menu-list">
-            <li class="header__menu-item">
-              <a href="index-ru.html" class="header__menu-link">Главная</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="index-ru.html#portfolio" class="header__menu-link">Портфолио</a>
-            </li>
-            <li class="header__menu-item">
-              <a class="header__menu-link">Резюме</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
 
 
-    <main class="resume">
-      <div class="container">
+      <main class="resume">
+        <div class="container">
+          <div class="resume__downloads">
+            <a href="/assets/tyalo_vladimir-resume.pdf" class="btn btn--download" target="_blank">Загрузить pdf</a>
+            <a href="assets/tyalo_vladimir_resume.docx" class="btn btn--download" target="_blank">Загрузить docx</a>
+          </div>
+          <div class="resume__photo-wrapper">
+            <img class="resume__photo" src="img/my-photo.jpg" alt="Tyalo Vladimir Ivanovich" width="300" height="225">
+          </div>
+          <section class="details">
+            <h2>Персональные данные</h2>
+            <table class="details__list">
+              <tr class="details__item">
+                <td class="details__key">ФИО:</td>
+                <td class="details__val details__val--name">Тяло Владимир Иванович</td>
+              </tr>
+              <tr class="details__item">
+                <td class="details__key">Дата рождения:</td>
+                <td class="details__val details__val--dob">6 октября 1980</td>
+              </tr>
+              <tr class="details__item">
+                <td class="details__key">Место жительства:</td>
+                <td class="details__val details__val--home">Россия, Самара</td>
+              </tr>
+              <tr class="details__item">
+                <td class="details__key">Сайт:</td>
+                <td class="details__val details__val--web">
+                  <a class="details__val-link" href="https://tyalovladimir.herokuapp.com" target="_blank">tyalovladimir.herokapp.com</a>
+                </td>
+              </tr>
+              <tr class="details__item">
+                <td class="details__key">Телефон:</td>
+                <td class="details__val details__val--phone">
+                  <a href="tel:+79171173215">+7 (917) 117-32-15</a>
+                </td>
+              </tr>
+              <tr class="details__item">
+                <td class="details__key ">Скайп:</td>
+                <td class="details__val details__val--skype">
+                  <a href="skype:vladimir.tyalo">vladimir.tyalo</a>
+                </td>
+              </tr>
+              <tr class="details__item">
+                <td class="details__key">Почта:</td>
+                <td class="details__val details__val--mail">
+                  <a href="mailto:bobtial@inbox.ru" target="_top">bobtial@inbox.ru</a>
+                </td>
+              </tr>
 
-        <div class="resume__photo-wrapper">
-          <img class="resume__photo" src="img/my-photo.jpg" alt="Tyalo Vladimir Ivanovich" width="300" height="225">
+              <tr class="details__item">
+                <td class="details__key">Гитхаб:</td>
+                <td class="details__val details__val--github">
+                  <a href="https://github.com/VladimirTyalo" target="_blank">https://github.com/VladimirTyalo</a>
+                </td>
+              </tr>
+            </table>
+          </section>
+
+
+          <section class="education">
+            <h2>Образование</h2>
+
+            <div class="education__title">ВУЗы</div>
+            <table class="education__universities">
+              <caption class="education__header">ВУЗы</caption>
+              <tr class="education__item ">
+                <td class="education__date">1999 - 2002</td>
+                <td class="education__descr">Самарский институт инженеров железнодорожного транспорта</td>
+              </tr>
+              <tr class="education__item">
+                <td class="education__date">1997 - 1999</td>
+                <td class="education__descr">Самарский государственный аэрокосмический университет</td>
+              </tr>
+            </table>
+
+            <div class="education__title">Курсы</div>
+            <table class="education__courses">
+              <caption class="education__header">Курсы</caption>
+              <tr class="education__item">
+                <td class="education__date">05.2016 - 06.2016</td>
+                <td class="education__descr">
+                  <span>html academy: HTML & CSS advanced course</span>
+                  <img class="education__icon-show" for="academy-advanced" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                </td>
+              </tr>
+              <tr class="education__item">
+                <td class="education__date">04.2016 - 05.2016</td>
+                <td class="education__descr">
+                  <span>MongoDB University: MongoDB for Node.js Developers</span>
+                  <img class="education__icon-show" for="mongo-nodejs" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                </td>
+              </tr>
+              <tr class="education__item ">
+                <td class="education__date">01.2016 - 02.2016</td>
+                <td class="education__descr">
+                  <span>html academy: HTML & CSS basic course</span>
+                  <img class="education__icon-show" for="academy-base" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                </td>
+              </tr>
+              <tr class="education__item ">
+                <td class="education__date">09.2015 - 10.2015</td>
+                <td class="education__descr">
+                  <span>MongoDB University: MongoDB for Java Developers</span>
+                  <img class="education__icon-show" for="mongo-java" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                </td>
+              </tr>
+              <tr class="education__item">
+                <td class="education__date">02.2015 - 03.2015</td>
+                <td class="education__descr">Coursera: Algorithms (Java)</td>
+              </tr>
+              <tr class="education__item">
+                <td class="education__date">11.2014 - 12.2014</td>
+                <td class="education__descr">
+                  <span>Coursera: Programming Languages (SML, Scheme, Ruby)</span>
+                  <img class="education__icon-show" for="programming-lan" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                </td>
+              </tr>
+              <tr class="education__item ">
+                <td class="education__date">12.2013 - 01.2014</td>
+                <td class="education__descr">
+                  <span>Edx: Introduction to Computer Science and Programming (Python)</span>
+                  <img class="education__icon-show" for="edx-python" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                </td>
+              </tr>
+            </table>
+
+          </section>
+
+          <section class="skills">
+            <h2 class="details__title">Навыки</h2>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SASS</span>
+                <span>JavaScript</span>
+              </li>
+              <li class="skills__item">
+                <span>Git</span>
+                <span>Gulp</span>
+              </li>
+              <li class="skills__item">
+                <span>ООП</span>
+                <span>БЭМ</span>
+                <span>Адаптивная верстка</span>
+              </li>
+              <li class="skills__item">
+                <span>intermediate English</span>
+              </li>
+            </ul>
+          </section>
+
+          <section class="coding">
+            <h2 class="coding__title">Проекты</h2>
+            <ul class="coding__list">
+              <li class="coding__sample">2016 Разработал одностраничное приложение -
+                <a href="http://cities-weather-forecast.herokuapp.com/" target="_blank">Weather forecast</a>
+                .
+                Город где вы находитесь определяется автоматически с помощью сервиса ipinfo.io. Есть возможность выбрать любой другой город для прогноза. Использовал jQuery, BlueBird, MongoDB, Express. Код тестировал с помощью Mocha и Chai.
+              </li>
+              <li class="coding__sample">2016 Сверстал сайт
+                <a href="https://vladimirtyalo.github.io/the-band/" target="_blank">"The Band"</a>
+                по десктопному макету и адаптировал его для планшетов и мобильных устройств, кастомизировал аудиоплеер с помощью JavaScript. Код плеера разбил на модули, а для сборки использовал browserify. Для проверки качества кода применял jshint.
+              </li>
+
+              <li class="coding__sample">2016 Сверстал полностью адаптивный сайт (для разных значений ширины и плотности пикселей экранов) -
+                <a href="http://tyalomishka.herokuapp.com" target="_blank">"Мишка"</a>
+                .
+                Использовал подход mobile-first, БЭМ методологию, SASS препроцессор и flex для сетки. В качестве автоматизатора задач выбрал gulp с набором npm плагинов - autoprefixer, postcss, imagemin и др. JavaScript использовал для меню и слайдера.
+              </li>
+
+              <li class="coding__sample">2016 Сверстал несколько сайтов, используя статитческую и резиновую верстку. Часть работ разместил на своем
+                <a href="/index-ru.html">сайте.</a>
+                В каждом из этих проектов добивался максимального соответствия PSD макету (pixel perfect), поддержки всех современных (и не очень) браузеров, и доступности основного содержимого при отключенном JavaScript.
+
+              </li>
+              <li class="coding__sample">
+                <span class="coding__descr">2015 Реализовал различные алгоритмы и структуры данных (Percolation, WordNet, Deque, Seam Carving, Line pattern recognition, 8-Puzzle )  на языке java в рамках курса Algorithms от Coursera.</span>
+              </li>
+            </ul>
+          </section>
+          <section class="employment">
+            <h2>
+              Опыт работы
+            </h2>
+            <div class="employment__mobile">ОАО "Российские железные дороги"</div>
+            <table>
+              <col class="employment__column-one">
+              <col class="employment__column-two">
+              <tr>
+                <td class="employment__tablet">
+                  <div>ОАО "Российские железные дороги"</div>
+                  <div class="employment__time">2004 - 2015</div>
+                </td>
+                <td>
+                  <b>Поездной диспетчер:</b>
+                  организовывал формировние поездов и руководил их движением, отвечал за рациональное распределение локомотивов, осуществлял оперативное руководство работниками станций и работниками смежных служб.
+                </td>
+              </tr>
+              <tr>
+                <td class="employment__tablet">
+                  <div>ОАО "Российские железные дороги"</div>
+                  <div class="employment__time">2003 - 2004</div>
+                </td>
+                <td>
+                  <b>Дежурный по станции</b>
+                  : отвечал за пропуск поездов по станции и эффективное использование маневровых локомотивов.
+                </td>
+              </tr>
+              <tr>
+                <td class="employment__tablet">
+                  <div>ОАО "Российские железные дороги"</div>
+                  <div class="employment__time">2001 - 2003</div>
+                </td>
+                <td>
+                  <b>Составитель поездов</b>
+                  : формировал поезда на станциях и подъезных путях.
+                </td>
+              </tr>
+            </table>
+          </section>
+
         </div>
-        <section class="details">
-          <h2>Персональные данные</h2>
-          <table class="details__list">
-            <tr class="details__item">
-              <td class="details__key">ФИО:</td>
-              <td class="details__val details__val--name">Тяло Владимир Иванович</td>
-            </tr>
-            <tr class="details__item">
-              <td class="details__key">Дата рождения:</td>
-              <td class="details__val details__val--dob">6 октября 1980</td>
-            </tr>
-            <tr class="details__item">
-              <td class="details__key">Место жительства:</td>
-              <td class="details__val details__val--home">Россия, Самара</td>
-            </tr>
-            <tr class="details__item">
-              <td class="details__key">Сайт:</td>
-              <td class="details__val details__val--web">
-                <a class="details__val-link" href="https://tyalovladimir.herokuapp.com" target="_blank">tyalovladimir.herokapp.com</a>
-              </td>
-            </tr>
-            <tr class="details__item">
-              <td class="details__key">Телефон:</td>
-              <td class="details__val details__val--phone">
-                <a href="tel:+79171173215">+7 (917) 117-32-15</a>
-              </td>
-            </tr>
-            <tr class="details__item">
-              <td class="details__key ">Скайп:</td>
-              <td class="details__val details__val--skype">
-                <a href="skype:vladimir.tyalo">vladimir.tyalo</a>
-              </td>
-            </tr>
-            <tr class="details__item">
-              <td class="details__key">Почта:</td>
-              <td class="details__val details__val--mail">
-                <a href="mailto:bobtial@inbox.ru" target="_top">bobtial@inbox.ru</a>
-              </td>
-            </tr>
-
-            <tr class="details__item">
-              <td class="details__key">Гитхаб:</td>
-              <td class="details__val details__val--github">
-                <a href="https://github.com/VladimirTyalo" target="_blank">https://github.com/VladimirTyalo</a>
-              </td>
-            </tr>
-          </table>
-        </section>
+      </main>
 
 
-        <section class="education">
-          <h2>Образование</h2>
+      <footer class="footer">
+        <div class="container">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="index-ru.html" class="footer__menu-link">Главная</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="index-ru.html#portfolio" class="footer__menu-link">Портфолио</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="index-ru.html#contacts" class="footer__menu-link">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link">Резюме</a>
 
-          <div class="education__title">ВУЗы</div>
-          <table class="education__universities">
-            <caption class="education__header">ВУЗы</caption>
-            <tr class="education__item ">
-              <td class="education__date">1999 - 2002</td>
-              <td class="education__descr">Самарский институт инженеров железнодорожного транспорта</td>
-            </tr>
-            <tr class="education__item">
-              <td class="education__date">1997 - 1999</td>
-              <td class="education__descr">Самарский государственный аэрокосмический университет</td>
-            </tr>
-          </table>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
 
-          <div class="education__title">Курсы</div>
-          <table class="education__courses">
-            <caption class="education__header">Курсы</caption>
-            <tr class="education__item">
-              <td class="education__date">05.2016 - 06.2016</td>
-              <td class="education__descr">html academy: HTML & CSS
-                advanced course
-              </td>
-            </tr>
-            <tr class="education__item">
-              <td class="education__date">04.2016 - 05.2016</td>
-              <td class="education__descr">MongoDB University: MongoDB for Node.js Developers</td>
-            </tr>
-            <tr class="education__item ">
-              <td class="education__date">01.2016 - 02.2016</td>
-              <td class="education__descr">html academy: HTML & CSS
-                basic course
-              </td>
-            </tr>
-            <tr class="education__item ">
-              <td class="education__date">09.2015 - 10.2015</td>
-              <td class="education__descr">MongoDB University: MongoDB for Java Developers</td>
-            </tr>
-            <tr class="education__item">
-              <td class="education__date">02.2015 - 03.2015</td>
-              <td class="education__descr">Coursera: Algorithms (Java)</td>
-            </tr>
-            <tr class="education__item">
-              <td class="education__date">11.2014 - 12.2014</td>
-              <td class="education__descr">Coursera: Programming Languages (SML, Scheme, Ruby)</td>
-            </tr>
-            <tr class="education__item ">
-              <td class="education__date">12.2013 - 01.2014</td>
-              <td class="education__descr">Edx: Introduction to Computer Science and Programming (Python)</td>
-            </tr>
-          </table>
+    </div>
 
-        </section>
+    <div class="undercover hidden"></div>
 
-        <section class="skills">
-          <h2 class="details__title">Навыки</h2>
-          <ul class="skills__list">
-            <li class="skills__item">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>SASS</span>
-              <span>JavaScript</span>
-              <span>Java</span>
-            </li>
-            <li class="skills__item">
-              <span>git</span>
-              <span>npm</span>
-              <span>Node.js</span>
-              <span>gulp</span>
-              <span>express</span>
-              <span>MongoDB</span>
-            </li>
-            <li class="skills__item">
-              <span>OOP</span>
-              <span>BEM</span>
-              <span>responsive web design</span>
-            </li>
-            <li class="skills__item">
-              <span>upper intermediate English</span>
-            </li>
-          </ul>
-        </section>
+    <embed class="certificate hidden" id="edx-python" src="assets/edx-intro-to-cs.pdf#page=1&view=FitH" width="750" height="700"></embed>
+    <embed class="certificate hidden" id="mongo-nodejs" src="assets/m101-for-nodejs.pdf#page=1&view=FitH" width="550" height="750"></embed>
+    <embed class="certificate hidden" id="mongo-java" src="assets/m101-for-java.pdf#page=1&view=FitH" width="750" height="650"></embed>
+    <embed class="certificate hidden" id="programming-lan" src="assets/programming-languages.pdf#page=1&view=FitH" width="550" height="750"></embed>
+    <embed class="certificate hidden" id="academy-base" src="assets/html-academy-basic.pdf#page=1&view=FitH" width="550" height="830"></embed>
+    <embed class="certificate hidden" id="academy-advanced" src="assets/html-academy-advanced.pdf#page=1&view=FitH" width="550" height="830"></embed>
 
-        <section class="coding">
-          <h2 class="coding__title">Опыт разработки</h2>
-          <ul class="coding__list">
-            <li class="coding__sample">2016 Разработал одностраничное  приложение
-              <a href="http://cities-weather-forecast.herokuapp.com/" target="_blank">"Weather forecast"</a>. Кроме использования новых для меня jQuery и BlueBird (Promise) решил освежить свои скромные знания mongoDB и добавил базу данных городов, размещенную на сервисе mlab, для отображения в autocomplete box. Возникла небольшая трудность со смешанным содержимым, так как сервис openweathermap.org/api не отдает данные по https. Пришлось создать сервер (express, request), который делает запрос по http на openweathermap.org/api и отдает данные браузеру по https. Для тестирования кода использовал Mocha и Chai.
-            </li>
-
-
-            <li class="coding__sample">2016 Сверстал  сайт
-              <a href="https://vladimirtyalo.github.io/the-band/" target="_blank">"The Band"</a>,  c адоптацией десктопного шаблона (PSD) для планшетов и мобильных устройств, кастомизировал аудиоплеер с помощью javascript. Код плеера разбил на модули, а для сборки использовал  browserify. Для проверки качества кода применял jshint. </li>
-
-            <li class="coding__sample">2016 Сверстал полностью адаптивный сайт (для разных значений ширины и плотности пикселей экранов) -
-              <a href="http://tyalomishka.herokuapp.com" target="_blank">Мишка</a>, используя подход mobile-first,
-              БЭМ методологию и SASS препроцессор.  В качестве ароматизатора задач  выбрал gulp с набором npm плагинов - autoprefixer, postcss, imagemin и др. JavaScript использовал для меню и слайдера.
-            </li>
-            <li class="coding__sample">2016 Сверстал чуть более сложный макет
-              <a href="http://tyalogllacy.herokuapp.com/" target="_blank">Глеси</a>. Добавил небольшую адаптивность  (резиновая верстка), использовав flex для построения сетки.</li>
-
-            <li class="coding__sample">2016 Сверстал статический сайт
-              <a href="http://tyalotechnomart.herokuapp.com/" target="_blank">Техномарт</a> по фотошоп макету (PSD), предоставленному "htmlacademy", реализовал базовую функциональность на javaScript.
-            </li>
-
-            <li class="coding__sample">
-              <span class="coding__descr">2015 Реализовал различные алгоритмы и структуры данных (Percolation, WordNet, Deque, Seam Carving, Line pattern recognition, 8-Puzzle )  на языке java в рамках курса Algorithms от Coursera.</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="employment">
-          <h2>
-            Опыт работы
-          </h2>
-          <div class="employment__mobile">ОАО "Российские железные дороги"</div>
-          <table>
-            <col class="employment__column-one">
-            <col class="employment__column-two">
-            <tr>
-              <td class="employment__tablet">
-                <div>ОАО "Российские железные дороги"</div>
-                <div class="employment__time">2004 - 2015</div>
-              </td>
-              <td>
-                <b>Поездной диспетчер</b>
-                : руководство движением поездов, организация формировния поездов и рациональное распределение локомотивов, оперативное руководство работниками станций (до 40 станций) и работниками смежных служб, ведение графика движения, журналов и другой документации.
-              </td>
-            </tr>
-            <tr>
-              <td class="employment__tablet">
-                <div>ОАО "Российские железные дороги"</div>
-                <div class="employment__time">2003 - 2004</div>
-              </td>
-              <td>
-                <b>Дежурный по станции</b>
-                : оперативное руководство подчиненными работниками, обеспечение безопасного пропуска поездов и эффективного использования маневровых ресурсов станции.
-              </td>
-            </tr>
-            <tr>
-              <td class="employment__tablet">
-                <div>ОАО "Российские железные дороги"</div>
-                <div class="employment__time">2001 - 2003</div>
-              </td>
-              <td>
-                <b>Составитель поездов</b>
-                : формирование составов поездов
-              </td>
-            </tr>
-          </table>
-        </section>
-
-      </div>
-    </main>
-
-
-    <footer class="footer">
-      <div class="container">
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a href="index-ru.html" class="footer__menu-link">Главная</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="index-ru.html#portfolio" class="footer__menu-link">Портфолио</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="index-ru.html#contacts" class="footer__menu-link">Контакты</a>
-            </li>
-            <li class="footer__menu-item">
-              <a class="footer__menu-link">Резюме</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </footer>
 
     <svg class="svg-sprite" style="display: none" xmlns="http://www.w3.org/2000/svg">
       <symbol viewBox="0 0 48 48" id="icon-linkedin">
@@ -279,6 +309,14 @@
 		c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z"></path>
           <path fill="#FFFFFF" d="M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698c-1.501,0-2.313,1.012-2.707,1.99
 		C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+        </g>
+      </symbol>
+
+      <symbol id="icon-man" fill="green" viewBox="0 0 26 26" enable-background="new 0 0 26 26" xml:space="preserve">
+        <path d="M2.1,23c0,0,0-1.5,0-1.7c0-2.2,3.3-4.2,6.9-4.9c0,0,1.1-0.6,0.8-1.7c-1.1-1.4-1.4-2.9-1.4-2.9c-0.2-0.1-0.5-0.3-0.7-0.5
+		C7.4,10.9,7,9.7,7.1,8.8C7.2,8,7.4,8.3,7.5,8.1C6.7,6.3,7.1,4,8,2.3C9.9-1,13.9,0,14.5,1.2c3.8-0.7,3.7,5.3,3.1,6.8
+		c0,0,0.3,0.1,0.3,1.5c-0.1,1.5-1.3,2.4-1.3,2.4c0,0.4-0.5,1.6-1.3,2.7c-0.7,1.4,0.7,1.7,0.7,1.7c3.6,0.7,6.9,2.7,6.9,4.9
+		c0,0.2,0,1.7,0,1.7c0,1.4-5.4,2.9-10.4,2.9C7.6,25.8,2.1,25.3,2.1,23z"/>
         </g>
       </symbol>
 

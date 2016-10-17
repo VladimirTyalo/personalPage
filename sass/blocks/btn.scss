@@ -41,23 +41,64 @@
       border-right: .5em solid transparent;
       border-top: 1.1em solid #fefff3;
       transition: all 0.5s;
-
       animation-name: bounce;
       animation-duration: 4s;
       animation-iteration-count: infinite;
       animation-fill-mode: forwards;
     }
 
-
-
     &:hover {
       background: rgba(3, 19, 30, 0.7);
     }
-
     &:active {
       background: whitesmoke;
       color: black;
     }
+  }
 
+  &--download {
+    border: 2px solid #4fa664;
+    background: white;
+    border-radius: 0.5em;
+    font-family: $font-garamond;
+    color: #4fa664;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-transform: none;
+    padding: 4px 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      color: #e39810;
+      border: 2px solid #e39810;
+      background: none;
+    }
+    &:active {
+      background: whitesmoke;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .btn {
+    &--download {
+      width: 8em;
+      padding: 0.3rem 0.9em;
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      display: inline-block;
+      vertical-align: bottom;
+
+      &:first-child {
+        margin-right: 0;
+      }
+    }
   }
 }

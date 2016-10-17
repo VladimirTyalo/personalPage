@@ -17,3 +17,22 @@
     @include font(18px, 26px);
   }
 }
+
+
+@media (max-width: 400px) {
+  .coding {
+    &__list {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    &__sample {
+      border-bottom:1px solid grey;
+      text-indent: 2em;
+
+      a {
+
+      }
+    }
+  }
+}
