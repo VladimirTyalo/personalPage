@@ -1,8 +1,6 @@
 /**
  * Created by vladimir on 7/31/16.
  */
-document.addEventListener("DOMContentLoaded", function (event) {
-
   (function () {
     "use strict";
 
@@ -15,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     function initMenu() {
       toggleMenu();
     }
-
 
     function addListeners() {
       burgerBtn.addEventListener("click", function (ev) {
@@ -41,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var oldPdfElement;
 
 
-    if(!undercover || !education) return;
+    if (!undercover || !education) return;
 
     education.addEventListener("click", function iconClickHandler(ev) {
       ev.preventDefault();
@@ -49,44 +46,73 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       // if click was not on an icon return
       if (!target.classList.contains(ICON_CLASS)) return;
+      // hide previously opened element
       if (oldPdfElement && !oldPdfElement.classList.contains("hidden")) {
         oldPdfElement.classList.add("hidden");
       }
       var id = target.getAttribute("for");
       var pdfElem = document.getElementById(id);
+      var courseProviderPdf = target.getAttribute("data-provider-pdf");
+      var localPdf = target.getAttribute("data-local-pdf");
 
-      oldPdfElement = pdfElem;
-      pdfElem.classList.remove("hidden");
-      undercover.classList.remove("hidden");
+      // make anchor tag and trigger click event to open in separate window;
+      var element = document.createElement("a");
 
-      window.addEventListener("keydown", function keyHandler(ev) {
-        var key = ev.keyCode;
-        // when esc pressed hide undercover and pdf itself
-        if (key === 27) {
-          closeModal();
-          window.removeEventListener("keydown", keyHandler);
-        }
-      });
+      element.setAttribute("target","_blank");
+      element.setAttribute("href", courseProviderPdf);
 
-      undercover.addEventListener("click", function disablePdf(ev) {
-        var target = ev.target;
-        if (target === undercover) {
-          closeModal();
-          undercover.removeEventListener("click", disablePdf);
-        }
-      });
-
-
-      function closeModal() {
-        if (!pdfElem.classList.contains("hidden")) {
-          pdfElem.classList.add("hidden");
-        }
-        if (!undercover.classList.contains("hidden")) {
-          undercover.classList.add("hidden");
-        }
-      }
+      fireClick(element);
+      return;
+    // TODO make pdf open in modal window
+    //  oldPdfElement = pdfElem;
+    //  pdfElem.classList.remove("hidden");
+    //  undercover.classList.remove("hidden");
+    //
+    //  window.addEventListener("keydown", function keyHandler(ev) {
+    //    var key = ev.keyCode;
+    //    // when esc pressed hide undercover and pdf itself
+    //    if (key === 27) {
+    //      closeModal();
+    //      window.removeEventListener("keydown", keyHandler);
+    //    }
+    //  });
+    //
+    //  undercover.addEventListener("click", function disablePdf(ev) {
+    //    var target = ev.target;
+    //    if (target === undercover) {
+    //      closeModal();
+    //      undercover.removeEventListener("click", disablePdf);
+    //    }
+    //  });
+    //
+    //
+    //  function closeModal() {
+    //    if (!pdfElem.classList.contains("hidden")) {
+    //      pdfElem.classList.add("hidden");
+    //    }
+    //    if (!undercover.classList.contains("hidden")) {
+    //      undercover.classList.add("hidden");
+    //    }
+    //  }
     });
+
+
+    function fireClick(elem) {
+      if(typeof elem == "string") elem = document.getElementById(objID);
+      if(!elem) return;
+
+      if(document.dispatchEvent) {   // W3C
+        var oEvent = document.createEvent( "MouseEvents" );
+        oEvent.initMouseEvent("click", true, true, window, 1, 1, 1, 1, 1, false, false, false, false, 0, elem);
+        elem.dispatchEvent(oEvent);
+      }
+      else if(document.fireEvent) {   // IE
+        elem.click();
+      }
+    }
 
   })();
 
-});
+
+
+

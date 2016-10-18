@@ -42,7 +42,6 @@
     var mimeType = mime.lookup(fullName);
 
     res.setHeader('Content-disposition', 'attachment; filename=' + fileName);
-
     res.setHeader('Content-type', mimeType);
 
     var filestream = fs.createReadStream(fullName);

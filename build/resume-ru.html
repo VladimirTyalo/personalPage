@@ -122,28 +122,29 @@
                 <td class="education__date">05.2016 - 06.2016</td>
                 <td class="education__descr">
                   <span>html academy: HTML & CSS advanced course</span>
-                  <img class="education__icon-show" for="academy-advanced" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <img class="education__icon-show" for="academy-advanced" data-provider-pdf="https://assets.htmlacademy.ru/certificates/intensive/24/32147.pdf" data-local-pdf="/assets/html-academy-advanced.pdf" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <a href="" target="_blank" download style="display: none"></a>
                 </td>
               </tr>
               <tr class="education__item">
                 <td class="education__date">04.2016 - 05.2016</td>
                 <td class="education__descr">
                   <span>MongoDB University: MongoDB for Node.js Developers</span>
-                  <img class="education__icon-show" for="mongo-nodejs" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <img class="education__icon-show" for="mongo-nodejs" src="img/icons/icon-show.svg" data-local-pdf="assets/m101-for-nodejs.pdf" data-provider-pdf="http://university.mongodb.com/course_completion/44e0fc2a5cc04c29b77c1a0a5d46b154" alt="icon show full certificate" width="30" height="30">
                 </td>
               </tr>
               <tr class="education__item ">
                 <td class="education__date">01.2016 - 02.2016</td>
                 <td class="education__descr">
                   <span>html academy: HTML & CSS basic course</span>
-                  <img class="education__icon-show" for="academy-base" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <img class="education__icon-show" for="academy-base" src="img/icons/icon-show.svg" data-local-pdf="html-academy-basic.pdf" data-provider-pdf="https://assets.htmlacademy.ru/certificates/intensive/18/32147.pdf" alt="icon show full certificate" width="30" height="30">
                 </td>
               </tr>
               <tr class="education__item ">
                 <td class="education__date">09.2015 - 10.2015</td>
                 <td class="education__descr">
                   <span>MongoDB University: MongoDB for Java Developers</span>
-                  <img class="education__icon-show" for="mongo-java" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <img class="education__icon-show" data-local-pdf="assets/m101-for-java.pdf" for="mongo-java" src="img/icons/icon-show.svg" data-provider-pdf="http://university.mongodb.com/course_completion/2986695b97b44a8a955117fde00801f2" alt="icon show full certificate" width="30" height="30">
                 </td>
               </tr>
               <tr class="education__item">
@@ -154,14 +155,14 @@
                 <td class="education__date">11.2014 - 12.2014</td>
                 <td class="education__descr">
                   <span>Coursera: Programming Languages (SML, Scheme, Ruby)</span>
-                  <img class="education__icon-show" for="programming-lan" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <img class="education__icon-show" for="programming-lan" src="img/icons/icon-show.svg" data-provider-pdf="assets/programming-languages.pdf" alt="icon show full certificate" width="30" height="30">
                 </td>
               </tr>
               <tr class="education__item ">
                 <td class="education__date">12.2013 - 01.2014</td>
                 <td class="education__descr">
                   <span>Edx: Introduction to Computer Science and Programming (Python)</span>
-                  <img class="education__icon-show" for="edx-python" src="img/icons/icon-show.svg" alt="icon show full certificate" width="30" height="30">
+                  <img class="education__icon-show" data-local-pdf="assets/edx-intro-to-cs.pdf" for="edx-python" src="img/icons/icon-show.svg" data-provider-pdf="https://s3.amazonaws.com/verify.edx.org/downloads/56bd48ae1d43405ca8db1c45366ecb27/Certificate.pdf" alt="icon show full certificate" width="30" height="30">
                 </td>
               </tr>
             </table>
@@ -292,7 +293,7 @@
 
     <div class="undercover hidden"></div>
 
-    <object class="certificate hidden" id="academy-advanced" data="https://assets.htmlacademy.ru/certificates/intensive/24/32147.pdf" type="application/pdf" width="750" height="700">
+    <object class="certificate hidden" id="academy-advanced" data="https://assets.htmlacademy.ru/certificates/intensive/24/32147.pdf" type="application/pdf" width="750" height="700" onerror="onErrorPdfLoading()">
       <embed class="certificate hidden" src="https://assets.htmlacademy.ru/certificates/intensive/24/32147.pdf" width="550" height="750" type="application/pdf"/>
     </object>
 
@@ -304,12 +305,9 @@
 
     <iframe class="certificate hidden" id="mongo-java" src="http://university.mongodb.com/course_completion/2986695b97b44a8a955117fde00801f2" frameborder="0" width="750" height="700"></iframe>
 
-    <object class="certificate hidden" id="programming-lan" data="/resume/prog-lang.zip"  width="750" height="700">
-      <embed class="certificate hidden" src="/resume/prog-lang.zip" width="550" height="750" />
+    <object class="certificate hidden" id="programming-lan" data="/resume/prog-lang.zip" width="750" height="700">
+      <embed class="certificate hidden" src="/resume/prog-lang.zip" width="550" height="750"/>
     </object>
-
-    <!--<iframe class="certificate hidden" id="programming-lan" data="/resume/programming-languages.pdf" width="750" height="700"></iframe>-->
-
 
     <object class="certificate hidden" id="edx-python" data="https://s3.amazonaws.com/verify.edx.org/downloads/56bd48ae1d43405ca8db1c45366ecb27/Certificate.pdf#page=1&view=FitH" type="application/pdf" width="750" height="700">
       <embed src="https://s3.amazonaws.com/verify.edx.org/downloads/56bd48ae1d43405ca8db1c45366ecb27/Certificate.pdf#page=1&view=FitH" type="application/pdf"/>
@@ -368,6 +366,11 @@
         <path d="M46.078,10.917h-9.602c-0.579-3.626-3.722-6.408-7.508-6.408h-7.694c-3.787,0-6.927,2.782-7.508,6.408h-9.6     c-2.292,0-4.167,1.8-4.167,4v9.233c0,2.208,1.791,4,4,4h16.78c0.057-1.149,0.551-2.186,1.332-2.933     c0.024-0.022,0.052-0.041,0.077-0.063c0.173-0.159,0.353-0.309,0.55-0.439c0.07-0.047,0.15-0.079,0.223-0.121     c0.162-0.093,0.322-0.19,0.497-0.262c0.137-0.057,0.285-0.09,0.429-0.133c0.124-0.037,0.242-0.086,0.371-0.112     C24.538,24.03,24.827,24,25.122,24c0.296,0,0.584,0.031,0.863,0.087c0.128,0.026,0.247,0.075,0.372,0.112     c0.144,0.043,0.29,0.076,0.429,0.134c0.174,0.072,0.333,0.168,0.495,0.261c0.073,0.043,0.153,0.075,0.225,0.122     c0.197,0.129,0.376,0.279,0.549,0.438c0.025,0.023,0.056,0.041,0.078,0.065c0.782,0.748,1.275,1.782,1.332,2.933h16.78     c2.209,0,4-1.791,4-4v-9.233C50.245,12.717,48.37,10.917,46.078,10.917z M17.619,10.917c0.51-1.541,1.947-2.664,3.657-2.664     h7.694c1.709,0,3.146,1.123,3.656,2.664H17.619z" fill="#4fa664"/>
       </symbol>
     </svg>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
 
     <script src="js/index.js"></script>
 
