@@ -33,7 +33,8 @@
   "use strict";
 
   var ICON_CLASS = "education__icon-show";
-  var undercover = document.querySelector(".undercover");
+  var UNDERCOVER_CLASS = "undercover";
+
   var education = document.querySelector(".education");
   var oldPdfElement;
 
@@ -53,11 +54,31 @@
     }
 
     var id = target.getAttribute("for");
+    var cssClass = target.getAttribute("class");
     var pdfElem = document.getElementById(id);
     var courseProviderPdf = target.getAttribute("data-provider-pdf");
     var localPdf = target.getAttribute("data-local-pdf");
 
-    var anchor = createElement("a", {src: courseProviderPdf, download:"pdf", target:"blank"});
+    var anchor = document.createElement("a", {src: courseProviderPdf, download:"pdf", target:"blank"});
+
+
+    var object = document.createElement("object", {
+      data: courseProviderPdf,
+      id: id,
+      class: cssClass,
+      width: 500,
+      height: 700
+    });
+
+    var embed = document.createElement("embed", {
+      src: courseProviderPdf,
+      width: 500,
+      height: 700
+    });
+
+    object.appendChild(embed);
+
+    document.body.appendChild(object);
 
     fireClick(anchor);
 
@@ -70,40 +91,38 @@
       }
     }
 
-    createLinkAndTrigger();
 
-    return;
-    // TODO make pdf open in modal window
-    //  oldPdfElement = pdfElem;
-    //  pdfElem.classList.remove("hidden");
-    //  undercover.classList.remove("hidden");
-    //
-    //  window.addEventListener("keydown", function keyHandler(ev) {
-    //    var key = ev.keyCode;
-    //    // when esc pressed hide undercover and pdf itself
-    //    if (key === 27) {
-    //      closeModal();
-    //      window.removeEventListener("keydown", keyHandler);
-    //    }
-    //  });
-    //
-    //  undercover.addEventListener("click", function disablePdf(ev) {
-    //    var target = ev.target;
-    //    if (target === undercover) {
-    //      closeModal();
-    //      undercover.removeEventListener("click", disablePdf);
-    //    }
-    //  });
-    //
-    //
-    //  function closeModal() {
-    //    if (!pdfElem.classList.contains("hidden")) {
-    //      pdfElem.classList.add("hidden");
-    //    }
-    //    if (!undercover.classList.contains("hidden")) {
-    //      undercover.classList.add("hidden");
-    //    }
-    //  }
+
+      oldPdfElement = pdfElem;
+      pdfElem.classList.remove("hidden");
+      undercover.classList.remove("hidden");
+
+      window.addEventListener("keydown", function keyHandler(ev) {
+        var key = ev.keyCode;
+        // when esc pressed hide undercover and pdf itself
+        if (key === 27) {
+          closeModal();
+          window.removeEventListener("keydown", keyHandler);
+        }
+      });
+
+      undercover.addEventListener("click", function disablePdf(ev) {
+        var target = ev.target;
+        if (target === undercover) {
+          closeModal();
+          undercover.removeEventListener("click", disablePdf);
+        }
+      });
+
+
+      function closeModal() {
+        if (!pdfElem.classList.contains("hidden")) {
+          pdfElem.classList.add("hidden");
+        }
+        if (!undercover.classList.contains("hidden")) {
+          undercover.classList.add("hidden");
+        }
+      }
   });
 
 
