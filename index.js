@@ -28,7 +28,7 @@
 
 
   app.get("/resume/:file", function (req, res) {
-    var fullName = path.join(__dirname, "/assets/" + req.params.file);
+    var fullName = path.resolve(__dirname, "assets", req.params.file).normalize();
     var fileName = path.basename(fullName);
     var mimeType = mime.lookup(fullName);
 
