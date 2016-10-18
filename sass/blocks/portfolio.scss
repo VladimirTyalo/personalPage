@@ -79,6 +79,7 @@
     text-align: center;
     color: white;
     @include font(16px, 20px);
+    max-width: 100%;
   }
 }
 

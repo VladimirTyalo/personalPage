@@ -26,15 +26,6 @@
     res.redirect("/");
   });
 
-  app.get("/resume", function (req, res) {
-    res.send("Not implemented yet");
-  });
-
-
-  app.get("/resume/pdf", function(req, res) {
-    res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir.zip"));
-  });
-
 
   app.get("/resume/:file", function (req, res) {
     var fullName = path.join(__dirname, "/assets/" + req.params.file);
@@ -42,10 +33,9 @@
     var mimeType = mime.lookup(fullName);
 
     res.setHeader('Content-disposition', ' filename=' + fileName);
+    res.setHeader('Content-type', mimeType);
 
-    res.setHeader('Content-type', "application/pdf");
     res.sendFile(fullName);
-
   });
 
 
