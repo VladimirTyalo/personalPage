@@ -28,23 +28,8 @@
 
 
   app.get("/resume/:file", function (req, res) {
-    var fullName = path.resolve(__dirname, "assets", req.params.file).normalize();
-    var fileName = path.basename(fullName);
-    var mimeType = mime.lookup(fullName);
-
-    fs.readFile(fullName, "utf-8", function (err, data) {
-      if (err) {
-        console.log(err);
-      }
-      else {
-        res.setHeader('Content-disposition', ' filename=' + fileName);
-        res.setHeader('Content-type', mimeType);
-        res.setHeader('Content-Length', data.length);
-
-        process.stdout.write("mime-type: " + mimeType + " fullname: " + fullName);
-        res.send(new Buffer(data, "binary"));
-      }
-    });
+    var fullName = path.resolve(__dirname, "build/assets", req.params.file).normalize();
+    res.sendFile(fullName);
   });
 
 
