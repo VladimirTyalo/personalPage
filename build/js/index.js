@@ -55,51 +55,45 @@
       var courseProviderPdf = target.getAttribute("data-provider-pdf");
       var localPdf = target.getAttribute("data-local-pdf");
 
-      console.log(courseProviderPdf);
-      console.log(localPdf);
-
       // make anchor tag and trigger click event to open in separate window;
-
       var element = document.createElement("a");
+
       element.setAttribute("target","_blank");
-      //element.setAttribute("download", "pdf");
       element.setAttribute("href", courseProviderPdf);
 
-
       fireClick(element);
-
       return;
-
-      oldPdfElement = pdfElem;
-      pdfElem.classList.remove("hidden");
-      undercover.classList.remove("hidden");
-
-      window.addEventListener("keydown", function keyHandler(ev) {
-        var key = ev.keyCode;
-        // when esc pressed hide undercover and pdf itself
-        if (key === 27) {
-          closeModal();
-          window.removeEventListener("keydown", keyHandler);
-        }
-      });
-
-      undercover.addEventListener("click", function disablePdf(ev) {
-        var target = ev.target;
-        if (target === undercover) {
-          closeModal();
-          undercover.removeEventListener("click", disablePdf);
-        }
-      });
-
-
-      function closeModal() {
-        if (!pdfElem.classList.contains("hidden")) {
-          pdfElem.classList.add("hidden");
-        }
-        if (!undercover.classList.contains("hidden")) {
-          undercover.classList.add("hidden");
-        }
-      }
+    // TODO make pdf open in modal window
+    //  oldPdfElement = pdfElem;
+    //  pdfElem.classList.remove("hidden");
+    //  undercover.classList.remove("hidden");
+    //
+    //  window.addEventListener("keydown", function keyHandler(ev) {
+    //    var key = ev.keyCode;
+    //    // when esc pressed hide undercover and pdf itself
+    //    if (key === 27) {
+    //      closeModal();
+    //      window.removeEventListener("keydown", keyHandler);
+    //    }
+    //  });
+    //
+    //  undercover.addEventListener("click", function disablePdf(ev) {
+    //    var target = ev.target;
+    //    if (target === undercover) {
+    //      closeModal();
+    //      undercover.removeEventListener("click", disablePdf);
+    //    }
+    //  });
+    //
+    //
+    //  function closeModal() {
+    //    if (!pdfElem.classList.contains("hidden")) {
+    //      pdfElem.classList.add("hidden");
+    //    }
+    //    if (!undercover.classList.contains("hidden")) {
+    //      undercover.classList.add("hidden");
+    //    }
+    //  }
     });
 
 
