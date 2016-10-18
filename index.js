@@ -4,9 +4,12 @@
   var express = require('express');
   var app = express();
   var path = require("path");
+<<<<<<< HEAD
   var fs = require('fs');
   var mime = require('mime');
   var PORT  = process.env.PORT || 8080;
+=======
+>>>>>>> parent of 3b9acea... add stream to send pdf
 
   app.set("port", PORT);
   app.use(express.static(path.join(__dirname, 'build')));
@@ -30,11 +33,12 @@
   });
 
 
-  app.get("/resume/pdf", function (req, res) {
-    res.sendFile(path.join(__dirname, "/assets/tyalo_vladimir.zip"));
+  app.get("/resume/pdf", function(req, res) {
+    res.sendFile(path.join(__dirname,"/assets/tyalo_vladimir.zip"));
   });
 
 
+<<<<<<< HEAD
   app.get("/resume/:file", function (req, res) {
     var fullName = path.join(__dirname, "/assets/" + req.params.file);
 
@@ -43,10 +47,18 @@
 
     res.setHeader('Content-disposition', 'attachment; filename=' + fileName);
     res.setHeader('Content-type', mimeType);
-
-    var filestream = fs.createReadStream(fullName);
-    filestream.pipe(res);
+=======
+  app.get("/resume/pdf/:file", function(req, res) {
+    var name = req.params.file;
+    var funllName = path.join(__dirname, "/assets/" + name);
+    res.sendFile(funllName);
   });
+>>>>>>> parent of 3b9acea... add stream to send pdf
+
+  app.get("/resume/docx", function(req, res) {
+    //res.sendFile(path.join(__dirname, "/assets/tyalo_vladimir_resume.zip"));
+  });
+
 
   app.get("/favicon.ico", function (req, res) {
     res.send("heroku needs favicon.ico path");
