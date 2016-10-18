@@ -28,7 +28,8 @@
 
 
   app.get("/resume/:file", function (req, res) {
-    var fullName = path.resolve(__dirname, "build/assets", req.params.file).normalize();
+    var fullName = path.join(__dirname, "build/assets/", req.params.file);
+    console.log(fullName);
     res.sendFile(fullName);
   });
 
