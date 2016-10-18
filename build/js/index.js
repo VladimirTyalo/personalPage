@@ -29,7 +29,7 @@
 })();
 
 // certificates module
-$(function () {
+(function () {
   "use strict";
 
   var ICON_CLASS = "education__icon-show";

@@ -32,10 +32,19 @@
     var fileName = path.basename(fullName);
     var mimeType = mime.lookup(fullName);
 
-    res.setHeader('Content-disposition', ' filename=' + fileName);
-    res.setHeader('Content-type', mimeType);
+    fs.readFile(fullName, function(err, data) {
+      if(err) {
+        console.log(err);
+      }
+      else {
+        res.setHeader('Content-disposition', ' filename=' + fileName);
+        res.setHeader('Content-type', mimeType);
 
-    res.sendFile(fullName);
+        res.send(data);
+      }
+    });
+
+
   });
 
 
