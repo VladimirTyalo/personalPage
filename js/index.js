@@ -70,7 +70,6 @@
       }
     });
 
-
     function fireClick(elem) {
       if (typeof elem == "string") elem = document.getElementById(objID);
       if (!elem) return;
@@ -93,10 +92,6 @@
         undercover.classList.add("hidden");
       }
     }
-
-
   })();
-
-
 })();
 
