@@ -33,6 +33,7 @@
   "use strict";
 
   var ICON_CLASS = "education__icon-show";
+  var NEW_WINDOW_CLASS = 'new-window';
   var undercover = document.querySelector(".undercover");
   var education = document.querySelector(".education");
   var oldPdfElement;
@@ -40,7 +41,12 @@
   education.addEventListener("click", function iconClickHandler(ev) {
     ev.preventDefault();
     var target = ev.target;
-
+    // if it contains new-window class open link in a new window
+    if(target.classList.contains(NEW_WINDOW_CLASS)) {
+      var url = target.getAttribute('data-provider-pdf');
+      window.open(url, '_blank');
+      return;
+    }
     // if click was not on an icon return
     if (!target.classList.contains(ICON_CLASS)) return;
     if (oldPdfElement && !oldPdfElement.classList.contains("hidden")) {
@@ -94,4 +100,3 @@
     }
   })();
 })();
-
